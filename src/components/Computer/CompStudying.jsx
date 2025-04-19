@@ -20,7 +20,7 @@ function ComputerEngineering() {
   }, []);
 
   const cards = [
-    { icon: <FaLaptopCode  className="text-[#134C93] mr-4 text-4xl" />, text: '2 Decades OF MECHANICAL EXCELLENCE' },
+    { icon: <FaLaptopCode  className="text-[#134C93] mr-4 text-4xl" />, text: '2 Decades of Computer Engineering Excellence' },
     { icon: <FaUserTie  className="text-[#134C93] mr-4 text-4xl" />, text: '450+ Leading Recruiters Hiring Software & Tech Talent' },
     { icon: <FaBrain  className="text-[#134C93] mr-4 text-4xl" />, text: 'Innovative R&D in AI, ML, Cloud & Full Stack Development' },
     { icon: <FaMicrophoneAlt  className="text-[#134C93] mr-4 text-4xl" />, text: 'Industry Exposure via Guest Lectures & Expert Mentorship' },
