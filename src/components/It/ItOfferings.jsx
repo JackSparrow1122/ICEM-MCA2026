@@ -97,7 +97,7 @@ function ItOfferings() {
         ))}
       </div>
       <h3 className='text-center text-[#390161] font-bold md:text-xl mt-4'>
-        At ICEM, you don’t just study IT—you build, innovate, and lead in the digital era!
+        At ICEM, you build, innovate & lead in the digital era!
       </h3>
     </div>
   );

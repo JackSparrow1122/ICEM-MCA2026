@@ -86,7 +86,7 @@ function MechHero() {
               2 Decades of Excellence in Education | 5 Specializations | <span className="text-[#FAB701] font-bold">100% Guarantee Placement Assistance</span>
             </p>
             <p className="py-4 text-3xl">
-              Build, Innovate, and Lead!
+              Build, Innovate & Lead!
             </p>
           </div>
         </div>

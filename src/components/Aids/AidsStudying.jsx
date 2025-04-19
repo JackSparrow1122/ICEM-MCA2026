@@ -19,8 +19,8 @@ function ItStudying() {
 
   const cards = [
     { icon: <FaStar className="text-[#117577] mr-4 text-4xl" />, text: '2 Decades OF MECHANICAL EXCELLENCE' },
-    { icon: <FaUsers className="text-[#117577] mr-4 text-4xl" />, text: '450+ INDUSTRY PARTNERS' },
-    { icon: <FaBuilding className="text-[#117577] mr-4 text-4xl" />, text: 'EXPOSURE TO INDUSTRIAL GUEST LECTURES' },
+    { icon: <FaUsers className="text-[#117577] mr-4 text-4xl" />, text: '450+ LEADING RECRUITERS' },
+    { icon: <FaBuilding className="text-[#117577] mr-4 text-4xl" />, text: 'EXPOSURE TO INDUSTRIAL GUEST LECTURES & MENTORSHIP' },
     { icon: <FaLaptop className="text-[#117577] mr-4 text-4xl" />, text: 'INNOVATIVE R&D IN IT' },
     { icon: <FaGraduationCap className="text-[#117577] mr-4 text-4xl" />, text: 'IT and Apple Labs' },
     { icon: <FaChartLine className="text-[#117577] mr-4 text-4xl" />, text: 'EXCEPTIONAL GROWTH OPPORTUNITIES' },
@@ -32,7 +32,7 @@ function ItStudying() {
       <div className="flex flex-col lg:flex-row px-6 md:px-12 py-8 gap-10 poppins-regular overflow-hidden">
         {/* Left Side */}
         <div className="w-full lg:w-3/5" data-aos="fade-right">
-          <h1 className="text-3xl md:text-4xl font-semibold mb-4">Grow, Connect, Lead with ICEM!!</h1>
+          <h1 className="text-3xl md:text-4xl font-semibold mb-4">Grow, Connect & Lead with ICEM!!</h1>
           <h2 className="text-xl md:text-2xl font-semibold text-[#117577] mb-4">AI-DS Engineering & Management</h2>
           <p className="text-md md:text-lg mb-4" data-aos="fade-up">
           Indira College of Engineering & Management offers a comprehensive AI-DS Engineering program that
@@ -78,7 +78,7 @@ function ItStudying() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Highlight 1 */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full">
+          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full border-1 hover:border-[#117577]">
             <FaChartLine className="text-[#117577] text-5xl mb-4" />
             <h3 className="text-lg font-bold text-[#117577] mb-2">National Rankings</h3>
             <p className="text-gray-700 text-base">
@@ -87,7 +87,7 @@ function ItStudying() {
           </div>
 
           {/* Highlight 2 */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full">
+          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full border-1 hover:border-[#117577]">
             <FaLaptopCode className="text-[#117577] text-5xl mb-4" />
             <h3 className="text-lg font-bold text-[#117577] mb-2">Smart India Hackathon</h3>
             <p className="text-gray-700 text-base">
@@ -96,7 +96,7 @@ function ItStudying() {
           </div>
 
           {/* Highlight 3 */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full">
+          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full border-1 hover:border-[#117577]">
             <FaGraduationCap className="text-[#117577] text-5xl mb-4" />
             <h3 className="text-lg font-bold text-[#117577] mb-2">National Education Award</h3>
             <p className="text-gray-700 text-base">

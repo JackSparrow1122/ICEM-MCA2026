@@ -20,9 +20,9 @@ function ComputerEngineering() {
 
   const cards = [
     { icon: <FaTools className="text-[#134C93] mr-4 text-4xl" />, text: '2 Decades OF MECHANICAL EXCELLENCE' },
-    { icon: <FaIndustry className="text-[#134C93] mr-4 text-4xl" />, text: '450+ INDUSTRY PARTNERS' },
+    { icon: <FaIndustry className="text-[#134C93] mr-4 text-4xl" />, text: '450+ LEADING RECRUITERS' },
     { icon: <FaCogs className="text-[#134C93] mr-4 text-4xl" />, text: 'INNOVATIVE R&D IN COMPUTER ENGINEERING' },
-    { icon: <FaLightbulb className="text-[#134C93] mr-4 text-4xl" />, text: 'EXPOSURE TO INDUSTRIAL GUEST LECTURES' },
+    { icon: <FaLightbulb className="text-[#134C93] mr-4 text-4xl" />, text: 'EXPOSURE TO INDUSTRIAL GUEST LECTURES & MENTORSHIP' },
     { icon: <FaHandsHelping className="text-[#134C93] mr-4 text-4xl" />, text: 'ADVANCED LABORATORIES' },
     { icon: <FaChartLine className="text-[#134C93] mr-4 text-4xl" />, text: 'EXCEPTIONAL GROWTH OPPORTUNITIES' },
   ];
@@ -33,7 +33,7 @@ function ComputerEngineering() {
       <div className="flex flex-col lg:flex-row px-6 md:px-12 py-8 gap-10 poppins-regular overflow-hidden">
         {/* Left Side */}
         <div className="w-full lg:w-3/5" data-aos="fade-right">
-          <h1 className="text-3xl md:text-4xl font-semibold mb-4">Grow, Connect, Lead with ICEM!!</h1>
+          <h1 className="text-3xl md:text-4xl font-semibold mb-4">Grow, Connect & Lead with ICEM!!</h1>
           <h2 className="text-xl md:text-2xl font-semibold text-[#134C93] mb-4">Computer Engineering</h2>
           <p className="text-md md:text-lg mb-4" data-aos="fade-up">
             Indira College of Engineering & Management offers a comprehensive Computer Engineering program that blends theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus, the institute provides an inspiring learning environment. The state-of-the-art infrastructure creates the perfect setting for students to thrive academically and personally. Our students gain exposure to advanced technologies, industrial practices, and expert mentoring, preparing them for a successful career in the engineering field.
@@ -75,7 +75,7 @@ function ComputerEngineering() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Highlight 1 */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full">
+          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full border-1 hover:border-[#134C93]">
             <FaChartLine className="text-[#134C93] text-5xl mb-4" />
             <h3 className="text-lg font-bold text-[#134C93] mb-2">National Rankings</h3>
             <p className="text-gray-700 text-base">
@@ -84,7 +84,7 @@ function ComputerEngineering() {
           </div>
 
           {/* Highlight 2 */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full">
+          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full border-1 hover:border-[#134C93]">
             <FaLaptopCode className="text-[#134C93] text-5xl mb-4" />
             <h3 className="text-lg font-bold text-[#134C93] mb-2">Smart India Hackathon</h3>
             <p className="text-gray-700 text-base">
@@ -93,7 +93,7 @@ function ComputerEngineering() {
           </div>
 
           {/* Highlight 3 */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full">
+          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full border-1 hover:border-[#134C93]">
             <FaGraduationCap className="text-[#134C93] text-5xl mb-4" />
             <h3 className="text-lg font-bold text-[#134C93] mb-2">National Education Award</h3>
             <p className="text-gray-700 text-base">

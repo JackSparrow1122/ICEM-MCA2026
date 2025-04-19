@@ -63,15 +63,15 @@ function MechHero() {
         {/* Left Text */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <p className="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4">
-            <span className="text-[#006BB3]">Computer Engineering</span> at Indira College of Engineering & Management
+            <span className="text-[#155DFC]">Computer Engineering</span> at Indira College of Engineering & Management
           </p>
           <div className="hidden lg:block">
             <p className="md:text-xl py-4">
               2 Decades of Excellence in Education | 5 Specializations | <br />
-              <span className="text-[#006BB3] font-bold">100% Guarantee Placement Assistance</span>
+              <span className="text-[#155DFC] font-bold">100% Guarantee Placement Assistance</span>
             </p>
             <p className="text-2xl md:text-3xl py-2">
-              <span className="text-[#006BB3] font-bold">Code</span> Your Future with <span className="text-[#006BB3] font-bold">Computer Engineering</span> at ICEM!
+              <span className="text-[#155DFC] font-bold">Code</span> Your Future with <span className="text-[#155DFC] font-bold">Computer Engineering</span> at ICEM!
             </p>
           </div>
         </div>

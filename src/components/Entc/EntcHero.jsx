@@ -30,7 +30,7 @@ function EntcHero() {
             2 Decades of Excellence in Education | 5 Specializations | 100% Placement Assistance
           </p>
           <p className="hidden sm:flex text-md md:text-2xl text-white leading-relaxed mb-8">
-            ENTC at ICEM - Powering the Future with Electronics & Telecommunication!
+            ENTC at ICEM - Powering the Future with <br /> Electronics & Telecommunication!
           </p>
         </div>
  
