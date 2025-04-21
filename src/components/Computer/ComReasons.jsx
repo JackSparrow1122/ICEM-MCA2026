@@ -3,7 +3,6 @@ import React from "react";
 import img1 from '../../assets/images/Com-Images/7.avif';
 import img2 from '../../assets/images/Com-Images/6.avif';
 import img3 from '../../assets/images/Com-Images/5.avif';
-
 import img4 from '../../assets/images/Com-Images/1 (2).avif';
 import img5 from '../../assets/images/Com-Images/2.avif';
 import img6 from '../../assets/images/Com-Images/3.avif';
