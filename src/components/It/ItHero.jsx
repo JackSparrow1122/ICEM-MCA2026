@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import bgImage from '../../assets/images/itbg.jpg';
+import bgImage from '../../assets/images/itbg.avif';
 
 const ItHero = () => {
   const [currentText, setCurrentText] = useState("");

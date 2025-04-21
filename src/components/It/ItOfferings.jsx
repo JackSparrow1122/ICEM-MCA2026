@@ -13,7 +13,7 @@ import offer6Image from '../../assets/images/IT-Images/iot.avif';
 import offer7Image from '../../assets/images/IT-Images/erp.avif';
 import offer8Image from '../../assets/images/IT-Images/mobai.avif';
 import techDots from '../../assets/images/circuit-dots.png';
-import technologyImage from '../../assets/images/technology-word.jpg';
+import technologyImage from '../../assets/images/technology-word.avif';
 
 function ItOfferings() {
   useEffect(() => {
