@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';  // Import AOS CSS
 import offer2Image from '../../assets/images/MECH-images/offer-5.avif';  // Import the robotics image
 import offer3Image from '../../assets/images/MECH-images/offer-4.avif';  // Import the thermal engineering image
 import offer4Image from '../../assets/images/MECH-images/offer-3.avif';  // Import the energy solutions image
-import offer5Image from '../../assets/images/MECH-images/portrait-engineers-work-hours-job-site.jpg';  // Import the prototyping image
+import offer5Image from '../../assets/images/MECH-images/offering.avif';  // Import the prototyping image
 import offer6Image from '../../assets/images/MECH-images/offer-1.avif';  // Import the internships image
 import offer1Image from '../../assets/images/MECH-images/offer-6.avif';  // Import the CAD/CAM image
 
