@@ -14,7 +14,6 @@ import offer7Image from '../../assets/images/Com-Images/Hands_on_simulation.avif
 import offer8Image from '../../assets/images/Com-Images/placement_readiness.avif';
 
 // Import the background image
-import backgroundImage from '../../assets/images/Com-Images/broImage.jpg'; // replace with the actual path to your image
 
 
 const IntegratedBcaMcaOfferings = () => {

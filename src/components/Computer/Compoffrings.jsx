@@ -8,7 +8,7 @@ import offer3Image from '../../assets/images/Com-Images/algorithem.avif';
 import offer4Image from '../../assets/images/Com-Images/AppDev.avif';
 import offer5Image from '../../assets/images/Com-Images/cloudComp.avif';
 import offer6Image from '../../assets/images/Com-Images/Blockchain.avif';
-import backgroundImage from '../../assets/images/broimage.avif';
+import backgroundImage from '../../assets/images/Com-Images/broimage.avif';
 
 const CompOffringICEM = () => {
   useEffect(() => {

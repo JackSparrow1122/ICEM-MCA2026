@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import backgroundImage from '../../assets/images/broimage.avif';
+import backgroundImage from '../../assets/images/Com-Images/broimage.avif';
 
 const CompBrochure = () => {
   const handleScrollToTop = () => {
