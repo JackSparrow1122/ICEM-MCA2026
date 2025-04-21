@@ -83,7 +83,7 @@ function MechHero() {
 
           <div className="hidden lg:block">
             <p className="text-xl py-4">
-              2 Decades of Excellence in Education | 5 Specializations | <span className="text-[#FAB701] font-bold">100% Guaranteed Placement Assistance</span>
+              2 Decades of Excellence in Education | 5 Specializations | <br /> <span className="text-[#FAB701] font-bold">100% Guaranteed Placement Assistance</span>
             </p>
             <p className="py-4 text-3xl">
               Build, Innovate & Lead!

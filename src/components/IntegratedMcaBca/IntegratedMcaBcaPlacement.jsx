@@ -3,7 +3,7 @@ import "react";
 // Import profile images
 import johnDoeImage from '../../assets/images/bca/sidharth.avif';
 import janeSmithImage from '../../assets/images/bca/shwetank.avif';
-import arjunPatelImage from '../../assets/images/bca/Vishwajeet_Mahendra_Ranaware.png';
+import arjunPatelImage from '../../assets/images/bca/Vishwajeet_Mahendra_Ranaware.avif';
 import snehaRaoImage from '../../assets/images/bca/amitsing.avif';
 import aliKhanImage from '../../assets/images/bca/poornima.avif';
 import meeraDasImage from '../../assets/images/bca/kushal.avif';
