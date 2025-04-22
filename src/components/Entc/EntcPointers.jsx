@@ -1,31 +1,32 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { FaCog, FaTools, FaRupeeSign, FaUsers, FaChalkboardTeacher, FaHourglassEnd } from "react-icons/fa";
 import { FaRegHourglassHalf } from "react-icons/fa6";
 
-const data = [
-  {
-    icon: <FaChalkboardTeacher className="text-[#117577]" size={40} />,
-    value: "Program Format",
-    description: "Offline",
-  },
-  {
-    icon: <FaRegHourglassHalf className="text-[#117577]" size={40} />,
-    value: "Duration",
-    description: "4 Years",
-  },
-  {
-    icon: <FaRupeeSign className="text-[#117577]" size={40} />,
-    value: "Program Fees",
-    description: "Rs.77,368.00/-",
-  },
-  {
-    icon: <FaUsers className="text-[#117577]" size={40} />,
-    value: "450+",
-    description: "Total Recruiters",
-  },
-];
+const EntcPointers = () => {
+  // Memoize data to avoid recalculation on each render
+  const data = useMemo(() => [
+    {
+      icon: <FaChalkboardTeacher className="text-[#117577]" size={40} />,
+      value: "Program Format",
+      description: "Offline",
+    },
+    {
+      icon: <FaRegHourglassHalf className="text-[#117577]" size={40} />,
+      value: "Duration",
+      description: "4 Years",
+    },
+    {
+      icon: <FaRupeeSign className="text-[#117577]" size={40} />,
+      value: "Program Fees",
+      description: "Rs.77,368.00/-",
+    },
+    {
+      icon: <FaUsers className="text-[#117577]" size={40} />,
+      value: "450+",
+      description: "Total Recruiters",
+    },
+  ], []); // Empty dependency array ensures this is only created once
 
-export default function AidsPointers() {
   return (
     <section className="bg-[#f7fcfc] py-4 md:py-12 px-8 md:px-16 font-sans">
       <div className="w-auto grid md:grid-cols-2 gap-2 items-center overflow-hidden">
@@ -60,4 +61,6 @@ export default function AidsPointers() {
       </div>
     </section>
   );
-}
+};
+
+export default EntcPointers;

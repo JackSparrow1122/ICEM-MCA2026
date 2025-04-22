@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import Slider from 'react-slick';
+
 import vandar from '../../assets/images/MECH-images/abc.avif';
 import micro from '../../assets/images/MECH-images/Microsoft.avif';
 import ias from '../../assets/images/MECH-images/ias.avif';
 import tesla from '../../assets/images/MECH-images/tesla.avif';
 import army from '../../assets/images/MECH-images/army.avif';
 import abn from '../../assets/images/MECH-images/abn.avif';
+
 import hansala from '../../assets/images/Hansala.avif';
 import arpita from '../../assets/images/Arpita.avif';
 import nikhil from '../../assets/images/Nikhil.avif';
@@ -25,7 +27,8 @@ const successors = [
 ];
 
 const MechJourny = () => {
-  const settings = {
+  // Slider settings memoized to prevent unnecessary re-creation on each render
+  const settings = useMemo(() => ({
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -39,18 +42,23 @@ const MechJourny = () => {
       { breakpoint: 768, settings: { slidesToShow: 1 } },
     ],
     prevArrow: (
+
       <div className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-600 text-white rounded-full z-10 cursor-pointer">
+
         <i className="fas fa-chevron-left"></i>
       </div>
     ),
     nextArrow: (
+
       <div className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-600 text-white rounded-full z-10 cursor-pointer">
+
         <i className="fas fa-chevron-right"></i>
       </div>
     ),
-  };
+  }), []);
 
   return (
+
     <div className="w-full h-full bg-white shadow-lg px-4 md:px-8 mt-6 overflow-hidden">
       <h3 className="text-center font-bold text-3xl md:text-4xl text-[#01224F] mb-4">
         Alumni <span className="text-[#41b9d0]">Journey</span>
@@ -84,6 +92,7 @@ const MechJourny = () => {
                 <p className="text-xs text-gray-600">{successor.degree}</p>
                 <p className="text-xs text-gray-600">{successor.location}</p>
               </div>
+
 
               {/* Details */}
               <div className="text-center">

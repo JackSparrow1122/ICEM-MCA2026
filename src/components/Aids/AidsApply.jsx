@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import backgroundImage from "../../assets/images/plane.avif";
 
 const AidsApply = () => {
@@ -8,14 +8,31 @@ const AidsApply = () => {
     const interval = setInterval(() => {
       setActiveStep((prevStep) => (prevStep + 1) % 5);
     }, 2000);
-
     return () => clearInterval(interval);
   }, []);
+
+  const steps = useMemo(
+    () => [
+      "Fill out the online application form on our website.",
+      "Submit the required documents (mark sheets, ID, etc.)",
+      "Pay the application fee securely online.",
+      "Attend the counseling and interview session.",
+      "Confirm your seat and join ICEM College!"
+    ],
+    []
+  );
+
+  const backgroundStyle = useMemo(
+    () => ({
+      backgroundImage: `url(${backgroundImage})`
+    }),
+    []
+  );
 
   return (
     <div
       className="relative bg-[#0c3249] py-8 px-8 md:px-16 text-center text-white bg-contain bg-no-repeat bg-center"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={backgroundStyle}
     >
       <div className="absolute inset-0 bg-[#0c3249] opacity-60 z-0"></div>
 
@@ -29,11 +46,7 @@ const AidsApply = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mx-auto">
-          {[ "Fill out the online application form on our website.",
-            "Submit the required documents (mark sheets, ID, etc.)",
-            "Pay the application fee securely online.",
-            "Attend the counseling and interview session.",
-            "Confirm your seat and join ICEM College!"].map((text, index) => (
+          {steps.map((text, index) => (
             <div
               key={index}
               className="relative bg-white p-6 shadow-xl w-full opacity-90 transform transition duration-300 hover:scale-105 hover:shadow-2xl"

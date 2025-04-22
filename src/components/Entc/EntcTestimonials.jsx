@@ -1,11 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
+
 import vandar from '../../assets/images/MECH-images/abc.avif';
 import micro from '../../assets/images/MECH-images/Microsoft.avif';
 import ias from '../../assets/images/MECH-images/ias.avif';
 import tesla from '../../assets/images/MECH-images/tesla.avif';
 import army from '../../assets/images/MECH-images/army.avif';
 import abn from '../../assets/images/MECH-images/abn.avif';
+
 import hansala from '../../assets/images/Hansala.avif';
 import arpita from '../../assets/images/Arpita.avif';
 import nikhil from '../../assets/images/Nikhil.avif';

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { FaSatellite } from 'react-icons/fa'; // Satellite icon
 import ProgramImage from '../../assets/images/AIDS-Imagegs/robothero.avif'; // Robot image
 import HatImage from '../../assets/images/hat.avif'; // Red hat image
 
-export default function AidsInnovation() {
-  return (
+const AidsInnovation = () => (
+  <>
     <div className="relative flex flex-col md:flex-row items-center justify-between px-6 sm:px-12 md:px-16 lg:px-24 py-6 md:py-12 bg-gradient-to-r from-[#104552] to-[#206b6e] text-white overflow-hidden">
       {/* Moving Satellite Icon */}
       <FaSatellite className="absolute top-6 left-0 text-6xl text-gray-400 animate-satellite" />
@@ -20,29 +20,32 @@ export default function AidsInnovation() {
 
       {/* Right: Content */}
       <div className="flex-1 text-center md:text-left mt-4 md:mt-0 relative">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight inline-block relative">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight inline-block relative">
           <span className="relative inline-block">
             <img
               src={HatImage}
               alt="Red Hat"
-              className="absolute -top-8 -left-12 hidden sm:block md:w-16 lg:w-20 animate-floating" />
-            Where AI Meets Innovation  
+              className="absolute -top-8 -left-12 hidden sm:block md:w-16 lg:w-20 animate-floating"
+            />
+            Where AI Meets Innovation
           </span>
         </h1>
 
-        <p className="mt-3 sm:mt-5 text-2xl sm:text-lg md:text-xl leading-relaxed">
+        <p className="mt-3 sm:mt-5 text-lg sm:text-lg md:text-xl leading-relaxed">
           Have you ever wondered how Netflix recommends your favorite shows, how chatbots talk like humans, or how AI can
-          diagnose diseases faster than doctors? <br/>That’s the power of Artificial Intelligence and Data Science!
+          diagnose diseases faster than doctors? <br />
+          That’s the power of Artificial Intelligence and Data Science!
         </p>
 
-        <p className="mt-2 sm:mt-3 text-sm sm:text-lg md:text-xl">
+        <p className="mt-2 sm:mt-3 text-lg md:text-xl">
           At <strong>ICEM</strong>, we turn curiosity into expertise by combining AI, programming, and data analytics
           into a future-ready curriculum!
         </p>
       </div>
+    </div>
 
-      {/* Floating animation CSS */}
-      <style>{`
+    {/* Floating animation CSS */}
+    <style>{`
       @keyframes float-large {
         0%, 100% {
           transform: translateY(0);
@@ -81,7 +84,8 @@ export default function AidsInnovation() {
       .animate-satellite {
         animation: satellite-move 8s linear infinite;
       }
-      `}</style>
-    </div>
-  );
-}
+    `}</style>
+  </>
+);
+
+export default memo(AidsInnovation);

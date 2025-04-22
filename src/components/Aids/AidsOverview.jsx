@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, memo } from 'react';
 import ProgramImage from '../../assets/images/AIDS-Imagegs/robothero.avif'; // Robot image
 import HatImage from '../../assets/images/hat.avif'; // Floating hat image
 
@@ -7,10 +7,13 @@ import 'aos/dist/aos.css';
 
 function AidsOverview() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
+    // Delay AOS initialization for smooth render
+    requestAnimationFrame(() => {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+      });
     });
   }, []);
 
@@ -30,6 +33,9 @@ function AidsOverview() {
           src={ProgramImage}
           alt="AIDS Program"
           className="w-48 sm:w-64 md:w-full h-[350px] sm:h-[450px] md:h-[500px] object-contain animate-float-large"
+          style={{
+            willChange: 'transform', // Optimize for animation
+          }}
         />
       </div>
 
@@ -40,6 +46,9 @@ function AidsOverview() {
             src={HatImage}
             alt="Hat"
             className="absolute left-[-25px] top-[-25px] md:top-[-35px] w-12 sm:w-16 h-12 sm:h-16 animate-floating"
+            style={{
+              willChange: 'transform', // Optimize for animation
+            }}
           />
           Program Overview
         </h2>
@@ -87,4 +96,4 @@ function AidsOverview() {
   );
 }
 
-export default AidsOverview;
+export default memo(AidsOverview);

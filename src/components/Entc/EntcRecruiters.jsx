@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 
 import logo1 from '../../../public/logos/schlumberger.avif';
 import logo2 from  '../../../public/logos/sas-min.avif';
@@ -31,18 +31,21 @@ import logo28 from '../../../public/logos/Datamatics.avif';
 import logo29 from '../../../public/logos/piaggio.avif'; 
 import logo30 from '../../../public/logos/mantruck_.avif'; 
 import logo31 from '../../../public/logos/kinatic.avif';  
+
 const CompRecruiter = () => {
   const [isVisible, setIsVisible] = useState(true);
 
-  const logos = [
+  // Memoize logos array to avoid unnecessary recalculations
+  const logos = useMemo(() => [
     logo1, logo2, logo3, logo4, logo5, logo6,
     logo7, logo8, logo9, logo10, logo11, logo12,
-    logo13, logo14, logo15, logo16, logo17, logo18,logo19,
+    logo13, logo14, logo15, logo16, logo17, logo18, logo19,
     logo20, logo21, logo22, logo23, logo24, logo25,
-    logo26, logo27,logo28,logo29, logo30,logo31
-  ];
+    logo26, logo27, logo28, logo29, logo30, logo31
+  ], []);
 
   useEffect(() => {
+    // Set visibility change event for the component
     const handleVisibilityChange = () => {
       setIsVisible(!document.hidden);
     };
@@ -58,35 +61,25 @@ const CompRecruiter = () => {
     <div className="logo-slider-section py-4 roboto-regular">
       <div className="text-center mb-4">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold">
-          <span >Top Recruiters</span> 
+          <span>Top Recruiters</span> 
         </h2>
       </div>
       <div className="logo-slider relative overflow-hidden w-full">
         <div className={`logo-slider-track flex ${isVisible ? 'animate' : ''}`}>
-          {/* Map over the logos and display them */}
+          {/* Map over logos with lazy loading */}
           {logos.map((logo, index) => (
             <div key={index} className="logo-slide flex-none mx-3 sm:mx-4 md:mx-5">
               <img
                 src={logo}
                 alt={`Recruiter Logo ${index + 1}`}
-                className="h-16 sm:h-20 max-w-[120px] object-contain"
-              />
-            </div>
-          ))}
-
-          {/* Duplicate set for seamless loop */}
-          {logos.map((logo, index) => (
-            <div key={`duplicate-${index}`} className="logo-slide flex-none mx-3 sm:mx-4 md:mx-5">
-              <img
-                src={logo}
-                alt={`Recruiter Logo ${index + 1}`}
+                loading="lazy"  // Lazy load the images
                 className="h-16 sm:h-20 max-w-[120px] object-contain"
               />
             </div>
           ))}
         </div>
 
-        <div className="absolute left-0 top-0 h-full w-24  to-transparent z-10" />
+        <div className="absolute left-0 top-0 h-full w-24 to-transparent z-10" />
         <div className="absolute right-0 top-0 h-full w-24 to-transparent z-10" />
       </div>
 

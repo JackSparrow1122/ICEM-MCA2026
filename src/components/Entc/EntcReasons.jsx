@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
   FaMicrochip,
   FaFlask,
@@ -10,8 +10,9 @@ import {
   FaUniversity,
 } from "react-icons/fa";
 
-function EntcReasons() {
-  const reasons = [
+const EntcReasons = () => {
+  // Memoize the reasons array to avoid recalculating on each render
+  const reasons = useMemo(() => [
     {
       icon: <FaMicrochip size={50} />,
       title: "Industry-Integrated Curriculum",
@@ -52,11 +53,11 @@ function EntcReasons() {
       title: "Vibrant Campus Life & Sports",
       desc: "A perfect mix of academics and extracurriculars!!",
     },
-  ];
+  ], []);
 
   return (
     <div className="relative py-8 bg-[#F6FBFF]">
-      <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold  text-center mb-6 z-10 relative">
+      <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-center mb-6 z-10 relative">
         Why Choose <span className="text-[#36A5B9]">ICEM</span> for Your <span className="text-[#36A5B9]">ENTC</span> Journey?
       </h2>
 
@@ -67,15 +68,13 @@ function EntcReasons() {
             className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl hover:border-2 hover:scale-105 hover:border-[#36A5B9] transition-all"
           >
             <div className="text-[#36A5B9] mb-4">{item.icon}</div>
-            <h3 className="text-xl font-semibold text-[#001E5D]">
-              {item.title}
-            </h3>
+            <h3 className="text-xl font-semibold text-[#001E5D]">{item.title}</h3>
             <p className="text-sm md:text-base text-gray-700">{item.desc}</p>
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default EntcReasons;

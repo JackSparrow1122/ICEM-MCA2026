@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload, faRobot } from '@fortawesome/free-solid-svg-icons'; // Icons
-import gearImage from '../../assets/images/tech-dots.avif'; // Background image
+import { faDownload, faRobot } from '@fortawesome/free-solid-svg-icons';
+import gearImage from '../../assets/images/tech-dots.avif';
 
 function AidsBrochure() {
   return (
@@ -15,22 +15,24 @@ function AidsBrochure() {
       }}
     >
       <div className="w-full bg-[#0c3249] p-4 rounded-3xl flex flex-col md:flex-row justify-between items-center">
-        {/* Left: Heading and paragraph */}
+        {/* Left Section */}
         <div className="max-w-full md:max-w-2/3 mb-6 md:mb-0 text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start space-x-2 mb-2">
             <FontAwesomeIcon icon={faRobot} className="text-2xl text-[#41b9d0]" />
             <h2 className="text-2xl font-bold text-white m-0">Syllabus</h2>
           </div>
           <p className="text-lg text-white hidden sm:block">
-          Explore the latest in Electronics and Telecommunication, including VLSI design, embedded systems, signal processing, and IoT-based communication.
+            Explore the latest in Electronics and Telecommunication, including VLSI design,
+            embedded systems, signal processing, and IoT-based communication.
           </p>
         </div>
 
-        {/* Right: Download Button */}
+        {/* Right Section */}
         <div className="mt-4 md:mt-4">
           <a
-            href="" // replace with your actual file path
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            href="/path/to/brochure.pdf" // ✅ Replace with real path
+            download
+            aria-label="Download Brochure PDF"
             className="bg-[#41b9d0] border-2 border-[#0c3249] text-white px-6 py-3 rounded-3xl hover:bg-[#1e5f76] hover:text-white hover:border-white transition duration-300 flex items-center space-x-2"
           >
             <FontAwesomeIcon icon={faDownload} />
