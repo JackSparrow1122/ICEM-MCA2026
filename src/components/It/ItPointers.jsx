@@ -20,7 +20,7 @@ const data = [
   {
     icon: <FaRupeeSign className="text-[#390161] text-4xl" />,
     value: "Programme Fees",
-    description: "Rs.77,368.00/-",
+    description: "Rs.1,02,868 /-",
   },
   {
     icon: <FaUsers className="text-[#390161] text-4xl" />,

@@ -16,7 +16,7 @@ const data = [
   {
     icon: <FaRupeeSign className="text-[#FFC80F] text-4xl" />, // Money icon for Fees
     value: "Programme Fees",
-    description: "Rs.77,368.00/-",
+    description: "Rs.1,02,868 /-",
   },
   {
     icon: <FaUsers className="text-[#FFC80F] text-4xl" />, // Users icon for Recruiters

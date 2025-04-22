@@ -74,11 +74,11 @@ function ComputerEngineering() {
 
         {/* Right Side */}
         <div className="w-full lg:w-2/5 flex justify-center items-center md:mb-0" data-aos="fade-left">
-          <div className="w-full h-full max-h-[600px]">
+          <div className="w-full h-full max-h-[700px]">
             <img
               src={MyImage}
               alt="Indira College"
-              className="w-full h-full object-cover object-bottom"
+              className="w-full h-full object-container"
               loading="lazy" // Lazy load image
             />
           </div>
