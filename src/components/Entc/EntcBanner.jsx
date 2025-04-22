@@ -18,7 +18,7 @@ function EntcBanner() {
 
       <button
         onClick={handleClick}
-        className="bg-[#41b9d0] text-[#0c3249] py-4 px-8 rounded-full text-xl font-semibold shadow-md hover:bg-gray-200 hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out mt-8"
+        className="bg-[#41b9d0] text-[#0c3249] py-2 px-4 rounded-full text-xl font-semibold shadow-md hover:bg-gray-200 hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out mt-8"
       >
         Apply Now
       </button>

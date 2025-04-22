@@ -75,7 +75,7 @@ function AidsReasons() {
         <AidsReasonCard
           icon={<FaChalkboardTeacher />}
           title="Expert Guest Lectures"
-          description="Learn from industry leaders and mechanical pioneers!"
+          description="Learn from industry leaders and pioneers!"
         />
       </div>
     </div>

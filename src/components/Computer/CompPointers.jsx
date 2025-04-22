@@ -5,7 +5,7 @@ import { FaChalkboardTeacher, FaHourglassHalf, FaRupeeSign, FaUsers } from 'reac
 const data = [
   {
     icon: <FaChalkboardTeacher className="text-[#134C93] text-4xl" />, // Notepad icon for Program Format
-    value: "Program Format",
+    value: "Programme Format",
     description: "Offline",
   },
   {
@@ -15,7 +15,7 @@ const data = [
   },
   {
     icon: <FaRupeeSign className="text-[#134C93] text-4xl" />, // Money icon for Fees
-    value: "Program Fees",
+    value: "Programme Fees",
     description: "Rs.77,368.00/-",
   },
   {

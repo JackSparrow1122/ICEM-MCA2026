@@ -61,7 +61,7 @@ function ComputerEngineering() {
           <h1 className="text-3xl md:text-4xl font-semibold mb-4">Grow, Connect & Lead with ICEM!!</h1>
           <h2 className="text-xl md:text-2xl font-semibold text-[#134C93] mb-4">Computer Engineering</h2>
           <p className="text-md md:text-lg mb-4" data-aos="fade-up">
-            Indira College of Engineering & Management offers a comprehensive Computer Engineering program that blends theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus, the institute provides an inspiring learning environment. The state-of-the-art infrastructure creates the perfect setting for students to thrive academically and personally. Our students gain exposure to advanced technologies, industrial practices, and expert mentoring, preparing them for a successful career in the engineering field.
+            Indira College of Engineering & Management offers a comprehensive Computer Engineering programme that blends theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus, the institute provides an inspiring learning environment. The state-of-the-art infrastructure creates the perfect setting for students to thrive academically and personally. Our students gain exposure to advanced technologies, industrial practices, and expert mentoring, preparing them for a successful career in the engineering field.
           </p>
 
           {/* Info Cards */}

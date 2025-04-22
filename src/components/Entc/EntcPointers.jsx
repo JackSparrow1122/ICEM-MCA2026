@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { FaCog, FaTools, FaRupeeSign, FaUsers, FaChalkboardTeacher, FaHourglassEnd } from "react-icons/fa";
+import {  FaRupeeSign, FaUsers, FaChalkboardTeacher, FaHourglassEnd } from "react-icons/fa";
 import { FaRegHourglassHalf } from "react-icons/fa6";
 
 const EntcPointers = () => {
@@ -7,7 +7,7 @@ const EntcPointers = () => {
   const data = useMemo(() => [
     {
       icon: <FaChalkboardTeacher className="text-[#117577]" size={40} />,
-      value: "Program Format",
+      value: "Programme Format",
       description: "Offline",
     },
     {
@@ -17,7 +17,7 @@ const EntcPointers = () => {
     },
     {
       icon: <FaRupeeSign className="text-[#117577]" size={40} />,
-      value: "Program Fees",
+      value: "Programme Fees",
       description: "Rs.77,368.00/-",
     },
     {
@@ -28,7 +28,9 @@ const EntcPointers = () => {
   ], []); // Empty dependency array ensures this is only created once
 
   return (
-    <section className="bg-[#f7fcfc] py-4 md:py-12 px-4 md:px-16 font-sans">
+
+    <section className="bg-[#f7fcfc] py-4 md:py-12 px-4 md:px-8 lg:px-16 font-sans">
+
       <div className="w-auto grid md:grid-cols-2 gap-2 items-center overflow-hidden">
         
         {/* Left content */}

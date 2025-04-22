@@ -59,7 +59,7 @@ function MechHero() {
       </style>
 
       {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
 
       {/* Half Gear */}
       <img
@@ -77,7 +77,7 @@ function MechHero() {
           </p>
           <div className="hidden lg:block">
             <p className="md:text-xl py-4">
-              2 Decades of Excellence in Education | 5 Specializations | <br />
+              2 Decades of Excellence in Education | 5 Specializations <br />
               <span className="text-[#155DFC] font-bold">100% Guaranteed Placement Assistance</span>
             </p>
             <p className="text-2xl md:text-3xl py-2">

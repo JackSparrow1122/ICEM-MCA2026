@@ -38,9 +38,15 @@ function EntcOfferings() {
   }, []);
 
   return (
+<<<<<<< HEAD
     <div className="px-4 md:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular overflow-hidden">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-[#36A5B9]" data-aos="fade-up">
         Electrical & Telecommunication Engineering Offerings
+=======
+    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular overflow-hidden">
+      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#36A5B9]" data-aos="fade-up">
+      Electronics & Telecommunication Engineering Offerings
+>>>>>>> 1b62aa6 (push)
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-y-2 md:gap-y-8 gap-x-4 md:gap-x-10 z-5 justify-center">

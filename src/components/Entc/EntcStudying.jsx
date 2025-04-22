@@ -35,10 +35,10 @@ function ItStudying() {
         {/* Left Side */}
         <div className="w-full lg:w-3/5" data-aos="fade-right">
           <h1 className="text-3xl md:text-4xl font-semibold mb-4">Grow, Connect & Lead with ICEM!!</h1>
-          <h2 className="text-xl md:text-2xl font-semibold text-[#36A5B9] mb-4">ENTC Engineering & Management</h2>
+          <h2 className="text-xl md:text-2xl font-semibold text-[#36A5B9] mb-4">ENTC Engineering</h2>
           <p className="text-md md:text-lg mb-4" data-aos="fade-up">
      
-          Indira College of Engineering & Management offers a comprehensive ENTC Engineering program that
+          Indira College of Engineering & Management offers a comprehensive ENTC Engineering programme that
           blends theoretical knowledge with hands-on experience in electronics, communication systems, and embedded technologies.
           Nestled within a vast, vibrant, and lush green campus, the institute provides an inspiring learning environment.
           The state-of-the-art infrastructure creates the perfect setting for students to thrive academically and personally.

@@ -67,7 +67,7 @@ function AidsOfferings() {
             data-aos="fade-up"
           >
             <img src={item.img} alt={item.alt} className="w-full h-40 md:h-48 object-cover mb-4" />
-            <div className="text-center">
+            <div className="text-center p-1">
               <h3 className="text-lg md:text-xl font-bold text-white mb-2">{item.title}</h3>
               <p className="text-base text-white">{item.desc}</p>
             </div>
