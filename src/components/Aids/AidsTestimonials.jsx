@@ -59,7 +59,7 @@ const MechJourny = () => {
 
   return (
 
-    <div className="w-full h-full bg-white shadow-lg px-4 md:px-8 mt-6 overflow-hidden">
+    <div className="w-full h-full bg-white shadow-lg py-8  overflow-hidden">
       <h3 className="text-center font-bold text-3xl md:text-4xl text-[#01224F] mb-4">
         Alumni <span className="text-[#41b9d0]">Journey</span>
       </h3>
