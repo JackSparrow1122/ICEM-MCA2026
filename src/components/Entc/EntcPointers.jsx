@@ -17,7 +17,7 @@ const EntcPointers = () => {
     },
     {
       icon: <FaRupeeSign className="text-[#117577]" size={40} />,
-      value: "Program Fees",
+      value: "Programme Fees",
       description: "Rs.77,368.00/-",
     },
     {
