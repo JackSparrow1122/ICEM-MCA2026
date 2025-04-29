@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import ProgramImage from '/public/BBA-MBA/overview.png';
+import ProgramImage from '../../assets/images/Com-Images/overview.avif';
 import HatImage from '../../assets/images/hat.avif';
-import { FaAward } from 'react-icons/fa';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
  

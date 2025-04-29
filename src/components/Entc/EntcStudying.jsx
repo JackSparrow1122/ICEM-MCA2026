@@ -35,7 +35,9 @@ function ItStudying() {
         {/* Left Side */}
         <div className="w-full lg:w-3/5" data-aos="fade-right">
           <h1 className="text-3xl md:text-4xl font-semibold mb-4">Grow, Connect & Lead with ICEM!!</h1>
+
           <h2 className="text-xl md:text-2xl font-semibold text-[#36A5B9] mb-4">ENTC Engineering</h2>
+
           <p className="text-md md:text-lg mb-4" data-aos="fade-up">
      
           Indira College of Engineering & Management offers a comprehensive ENTC Engineering programme that

@@ -34,9 +34,11 @@ function ItStudying() {
         {/* Left Side */}
         <div className="w-full lg:w-3/5" data-aos="fade-right">
           <h1 className="text-3xl md:text-4xl font-semibold mb-4">Grow, Connect & Lead with ICEM!!</h1>
+
           <h2 className="text-xl md:text-2xl font-semibold text-[#117577] mb-4">AI-DS Engineering</h2>
           <p className="text-md md:text-lg mb-4" data-aos="fade-up">
           Indira College of Engineering & Management offers a comprehensive AI-DS Engineering programme that
+
           blends theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus, 
           the institute provides an inspiring learning environment. The state-of-the-art infrastructure create the perfect
           setting for students to thrive academically and personally. Our students gain exposure to Advanced technologies,

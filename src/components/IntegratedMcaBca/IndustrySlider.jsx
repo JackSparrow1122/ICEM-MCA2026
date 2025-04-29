@@ -6,7 +6,7 @@ import image4 from '../../assets/images/Com-Images/green_tour.avif';
 import image5 from '../../assets/images/Com-Images/tech_fest.avif';
 import image6 from '../../assets/images/Com-Images/sports.avif';
 import image7 from '../../assets/images/Com-Images/prarambh-bca.avif';
-import tvImage from "../../assets/images/image.png";
+import tvImage from "../../assets/images/image.avif";
 
 const videos = [
   {
