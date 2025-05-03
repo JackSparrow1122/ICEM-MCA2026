@@ -37,7 +37,7 @@ const features = [
 
 export default function WhyChooseICEM() {
   return (
-    <section className="bg-white py-2 rounded-t-[100px] px-16 mt-8">
+    <section className="bg-white py-2 rounded-t-[100px] px-4  md:px-16 mt-8">
       <div className="text-center mb-10 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-[#135783] mb-4">
           Why Choose <span className="text-[#259CA8]">ICEM</span> for Your <span className="text-[#259CA8]">Engineering</span> Journey?

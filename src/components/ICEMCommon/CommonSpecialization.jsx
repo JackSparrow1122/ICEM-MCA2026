@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import img from '../../assets/images/sp3.png'
-import mech from '../../assets/images/mech.avif'
-import entc from '../../assets/images/entc.avif'
-import it from '../../assets/images/it.avif'
-import comp from '../../assets/images/comp.avif'
-import ai from '../../assets/images/aids.avif'
+import img from '../../assets/images/sp3.png';
+import mech from '../../assets/images/mech.avif';
+import entc from '../../assets/images/entc.avif';
+import it from '../../assets/images/it.avif';
+import comp from '../../assets/images/comp.avif';
+import ai from '../../assets/images/aids.avif';
 
 const CompOffringICEM = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 500, once: true }); // animation speed updated
   }, []);
 
   const specializations = [
@@ -21,7 +21,6 @@ const CompOffringICEM = () => {
       bg: 'bg-gradient-to-b from-[#FFA500] to-[#FFA500]',
       image: img,
     },
- 
     {
       icon: <img src={it} alt="IT" className="h-25 w-25" />,
       title: 'Information Technology',
@@ -51,42 +50,46 @@ const CompOffringICEM = () => {
       image: img,
     },
   ];
-  
 
   return (
     <div className="relative px-4 md:px-8 lg:px-16 py-12 bg-white overflow-hidden">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#135783]" data-aos="fade-up">
+      <h2
+        className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#135783]"
+        data-aos="fade-up"
+      >
         Engineering Specializations Offered at ICEM
       </h2>
-      <p className="text-center text-lg md:text-xl mb-10 text-[#135783]" data-aos="fade-up">
+      <p
+        className="text-center text-lg md:text-xl mb-10 text-[#135783]"
+        data-aos="fade-up"
+      >
         Explore the domain that excites you the most!
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
-  {specializations.map((item, index) => (
-    <div
-      key={index}
-      className="shadow-xl rounded-lg overflow-hidden border border-gray-200"
-      data-aos="fade-up"
-    >
-      <div className="h-40 flex items-center justify-center relative">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${item.image})` }}
-        ></div>
-        <div className={`absolute inset-0 ${item.bg} opacity-60`} />
-        <div className="relative z-10">
-          {item.icon}
-        </div>
+        {specializations.map((item, index) => (
+          <div
+            key={index}
+            className="shadow-xl rounded-lg overflow-hidden border border-gray-200"
+            data-aos="fade-up"
+          >
+            <div className="h-40 flex items-center justify-center relative">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${item.image})` }}
+              ></div>
+              <div className={`absolute inset-0 ${item.bg} opacity-60`} />
+              <div className="relative z-10">{item.icon}</div>
+            </div>
+            <div className="bg-white p-4 text-start">
+              <h3 className="text-lg md:text-lg font-bold text-[#135783] mb-2">
+                {item.title}
+              </h3>
+              <p className="text-sm md:text-sm text-gray-600">{item.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="bg-white p-4 text-start">
-        <h3 className="text-lg md:text-lg font-bold text-[#135783] mb-2">{item.title}</h3>
-        <p className="text-sm md:text-sm text-gray-600">{item.description}</p>
-      </div>
-    </div>
-  ))}
-</div>
-
     </div>
   );
 };
