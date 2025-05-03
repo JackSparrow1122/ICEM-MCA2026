@@ -66,7 +66,7 @@ function MechHero() {
         {/* Left Text */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <p className="font-semibold text-3xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4">
-          Shape Your Future with ICEM’s Top  <span className="text-[#259CA8]"> Engineering</span>  Programs!  </p>
+          Shape Your Future with ICEM’s Top  <span className="text-[#259CA8]"> Engineering</span>  Programmes!  </p>
           <div className="hidden lg:block">
             <p className="md:text-xl py-4">
               2 Decades of Excellence in Education | <br />

@@ -18,37 +18,38 @@ const CompOffringICEM = () => {
       icon: <img src={mech} alt="Mechanical" className="h-25 w-25" />,
       title: 'Mechanical Engineering',
       description: 'Design, innovate, and engineer the future!',
-      bg: 'bg-gradient-to-b from-[#FFA500] to-[#FFA500]',
-      image: img,
-    },
-    {
-      icon: <img src={it} alt="IT" className="h-25 w-25" />,
-      title: 'Information Technology',
-      description: 'Master cybersecurity, networking, and web development!',
-      bg: 'bg-gradient-to-b from-pink-500 to-pink-400',
-      image: img,
-    },
-    {
-      icon: <img src={comp} alt="Computer" className="h-25 w-25" />,
-      title: 'Computer Engineering',
-      description: 'Build software, apps, and futuristic tech!',
-      bg: 'bg-gradient-to-b from-purple-500 to-purple-400',
-      image: img,
-    },
-    {
-      icon: <img src={ai} alt="AI" className="h-25 w-25" />,
-      title: 'AI & Data Science',
-      description: 'Explore IoT, robotics, and wireless tech!',
-      bg: 'bg-gradient-to-b from-green-500 to-green-400',
+      bg: 'bg-gradient-to-b from-[#FAB701] to-[##259CA8]',
       image: img,
     },
     {
       icon: <img src={entc} alt="ENTC" className="h-25 w-25" />,
       title: 'Electronics & Telecommunication',
       description: 'Dive into AI, ML, and Big Data!',
-      bg: 'bg-gradient-to-b from-yellow-500 to-yellow-400',
+      bg: 'bg-gradient-to-b from-[#007595] to-[##259CA8]',
       image: img,
     },
+    {
+      icon: <img src={it} alt="IT" className="h-25 w-25" />,
+      title: 'Information Technology',
+      description: 'Master cybersecurity, networking, and web development!',
+      bg: 'bg-gradient-to-b from-[#A540FF] to-[##259CA8]',
+      image: img,
+    },
+    {
+      icon: <img src={comp} alt="Computer" className="h-25 w-25" />,
+      title: 'Computer Engineering',
+      description: 'Build software, apps, and futuristic tech!',
+      bg: 'bg-gradient-to-b from-[#155DFC] to-[##259CA8]',
+      image: img,
+    },
+    {
+      icon: <img src={ai} alt="AI" className="h-25 w-25" />,
+      title: 'AI & Data Science',
+      description: 'Explore IoT, robotics, and wireless tech!',
+      bg: 'bg-gradient-to-b from-[#41B9D0] to-[##259CA8]',
+      image: img,
+    },
+   
   ];
 
   return (
@@ -59,12 +60,7 @@ const CompOffringICEM = () => {
       >
         Engineering Specializations Offered at ICEM
       </h2>
-      <p
-        className="text-center text-lg md:text-xl mb-10 text-[#135783]"
-        data-aos="fade-up"
-      >
-        Explore the domain that excites you the most!
-      </p>
+     
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
         {specializations.map((item, index) => (
