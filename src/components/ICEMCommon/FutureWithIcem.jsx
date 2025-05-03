@@ -15,26 +15,19 @@ const BeFutureReady = () => {
           </p>
         </div>
         
-         {/* Right Responsive Video */}
-<div className="w-full aspect-[16/8]">
-<iframe
-
-            className="w-full h-full shadow-lg"
-
+        {/* Right Responsive Video */}
+        <div className="w-full aspect-[16/9]">
+          <iframe
+            className="w-full h-full shadow-lg rounded-xl"
             src="https://www.youtube.com/embed/-rAt2kuZN1E"
-
             title="ICEM Promo Video"
-
             frameBorder="0"
-
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-
             allowFullScreen
-
             loading="lazy" // Lazy loading added
-></iframe>
-</div>
-</div>
+          />
+        </div>
+      </div>
     </section>
   );
 };
