@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import img from '../../assets/images/sp3.png';
+import img from '../../assets/images/sp3.avif';
 import mech from '../../assets/images/mech.avif';
 import entc from '../../assets/images/entc.avif';
 import it from '../../assets/images/it.avif';
