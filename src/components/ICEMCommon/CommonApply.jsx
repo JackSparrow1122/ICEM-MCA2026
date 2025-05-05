@@ -13,13 +13,17 @@ const AdmissionProcess = () => {
   };
 
   return (
-    <div
-      className="relative bg-[#259CA8] bg-center bg-no-repeat bg-contain px-4 md:px-8 lg:px-16 py-10 text-white shadow-lg "
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-[#135783] opacity-85 mix-blend-overlay "></div>
+    <div className="relative bg-[#259CA8] px-4 md:px-8 lg:px-16 py-10 text-white shadow-lg overflow-hidden">
+      {/* ✅ Background image visible only on md and up */}
+      <div
+        className="hidden md:block absolute inset-0 bg-no-repeat bg-center bg-contain"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      ></div>
 
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#135783] opacity-85 mix-blend-overlay"></div>
+
+      {/* Content */}
       <div className="relative z-10 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           Admission Process: How to Apply?
