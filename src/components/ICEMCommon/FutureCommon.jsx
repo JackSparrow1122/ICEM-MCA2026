@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback } from "react";
+import React, { useRef, useState, useEffect, useCallback } from "react";
 
 const LifeAtICEM = () => {
   const leftRef = useRef(null);
