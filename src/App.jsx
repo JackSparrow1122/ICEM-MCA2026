@@ -12,7 +12,7 @@ import Navbar from './pages/Navbar';
 import ApplyNowButton from './components/ApplyNowButton'; 
 import BbaMba from './pages/IntegratedBbaMba'
 import BcaMca from './pages/IntegratedMcaBca'
-import ICEMCommon  from './pages/ICEMCommon'
+import ICEMVanila  from './pages/ICEMVanilla'
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Route path="/aids" element={<PageWithDynamicTitle title="AIDS" />} />
           <Route path="/bbamba" element={<BbaMba title="BbaMba" />} />
           <Route path="/bcamca" element={<BcaMca title="BcaMca" />} />
-          <Route path="/common" element={<ICEMCommon title="Common" />} />
+          <Route path="/icemvanilla" element={<ICEMVanila title="icemvanilla" />} />
         </Routes>
         <ApplyNowButton />
       </div>
