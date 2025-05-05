@@ -84,7 +84,7 @@ function MechHero() {
           </div>
 
           {/* Apply Now Button */}
-          <div className="mt-6 text-center lg:text-left">
+          <div className="mt-6 text-center lg:text-left hidden md:block">
             <button className="relative inline-flex items-center group text-lg font-semibold text-white">
               <span className="relative z-10 flex items-center gap-2 px-6 py-2 bg-[#259CA8] rounded-lg transition-transform duration-300 ease-in-out group-hover:translate-x-2">
                 Apply Now

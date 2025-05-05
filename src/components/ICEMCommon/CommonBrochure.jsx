@@ -1,31 +1,31 @@
-import React, { memo, useCallback } from 'react';
+import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const CompBrochure = () => {
-  const handleScrollToTop = useCallback(() => {
+  const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  };
 
   return (
-    <div className="flex justify-center items-center px-4 py-6 bg-white">
-      <div className="w-full max-w-7xl bg-[#259CA8] p-6 rounded-3xl flex flex-col md:flex-row md:justify-between md:items-center gap-4 shadow-lg">
-        {/* Text Content */}
-        <div className="text-white md:max-w-[65%]">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">Syllabus</h2>
-          <p className="text-sm md:text-base text-gray-200 hidden sm:block">
-            Master core engineering domains including robotics, thermodynamics, CAD/CAM, fluid mechanics, and advanced manufacturing systems.
+    <div
+      className="flex justify-between items-center bg-contain bg-center text-white shadow-lg py-2  px-4 md:px-8 lg:px-16 poppins-regular"
+    >
+      <div className="w-full bg-[#259CA8] p-6 rounded-3xl flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-full md:max-w-2/3 mb-4 md:mb-0">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Syllabus</h2>
+          <p className="text-lg text-gray-200 hidden sm:block">
+            Learn cutting-edge computer engineering skills in AI, full stack development, blockchain, cloud computing, and advanced algorithms.
           </p>
         </div>
 
-        {/* Download Button */}
-        <button
+        <a
           onClick={handleScrollToTop}
-          className="bg-[#07a3b3] border border-white text-white px-6 py-2 md:py-3 rounded-3xl hover:bg-white hover:text-[#07a3b3] transition-colors duration-300 ease-in-out flex items-center gap-2 text-sm md:text-base font-medium shadow-md"
+          className="bg-[#0793b3] border-2 border-white text-white px-6 py-3 rounded-3xl hover:bg-[#259CA8] transition duration-300 flex items-center space-x-2 cursor-pointer"
         >
           <FontAwesomeIcon icon={faDownload} />
           <span>Download Brochure</span>
-        </button>
+        </a>
       </div>
     </div>
   );

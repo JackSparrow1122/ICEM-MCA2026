@@ -14,11 +14,11 @@ const AdmissionProcess = () => {
 
   return (
     <div
-      className="relative bg-[#259CA8] bg-center bg-no-repeat bg-cover px-4 md:px-8 lg:px-16 py-10 text-white shadow-lg"
+      className="relative bg-[#259CA8] bg-center bg-no-repeat bg-contain px-4 md:px-8 lg:px-16 py-10 text-white shadow-lg "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#135783] opacity-85 mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[#135783] opacity-85 mix-blend-overlay "></div>
 
       <div className="relative z-10 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
@@ -47,7 +47,7 @@ const AdmissionProcess = () => {
         <div className="mt-10">
           <button
             onClick={scrollToTop}
-            className="bg-white text-[#135783] font-bold py-3 px-8 rounded-full shadow-lg hover:bg-[#135783] hover:text-white transition-all duration-300 ease-in-out"
+            className="bg-white text-[#135783] font-bold py-4 px-8 rounded-full shadow-lg hover:bg-[#135783] hover:text-white transition-all duration-300 ease-in-out"
           >
             Apply Now
           </button>

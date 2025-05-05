@@ -52,7 +52,7 @@ const CompOffringICEM = () => {
   ];
 
   return (
-    <div className="relative px-4 md:px-8 lg:px-16 py-12 bg-white overflow-hidden">
+    <div className="relative px-4 md:px-8 lg:px-16 py-4 bg-white overflow-hidden">
       <h2
         className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#135783]"
         data-aos="fade-up"

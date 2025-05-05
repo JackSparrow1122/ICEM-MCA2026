@@ -37,7 +37,7 @@ const features = [
 
 export default function WhyChooseICEM() {
   return (
-    <section className="bg-white py-12 rounded-t-[100px] px-4 md:px-16 mt-12">
+    <section className="bg-white py-4 px-4 md:px-16 ">
       {/* Heading Section */}
       <div className="text-center mb-12 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-[#135783] mb-4">
@@ -53,7 +53,7 @@ export default function WhyChooseICEM() {
       </div>
 
       {/* Features Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:gap-8 gap-4 px-6">
         {features.map(({ title, description, Icon }, index) => (
           <div
             key={index}
