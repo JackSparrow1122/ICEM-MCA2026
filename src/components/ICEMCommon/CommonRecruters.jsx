@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import soeL13 from '../../assets/images/SOE L13.jpg';
-import soeL14 from '../../assets/images/SOE L14.jpg';
-import soeL15 from '../../assets/images/SOE L15.jpg';
 
 const CompRecruiter = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const logos = [
-    soeL13,
-    soeL14,
-    soeL15
+    '/logos/SOE L1.jpg',
+    '/logos/SOE L2.jpg',
+    '/logos/SOE L3.jpg',
+    '/logos/SOE L4.jpg',
+    '/logos/SOE L5.jpg',
+    '/logos/SOE L6.jpg',
+    '/logos/SOE L7.jpg',
+    '/logos/SOE L8.jpg',
+    '/logos/SOE L9.jpg',
+    '/logos/SOE L10.jpg',
+    '/logos/SOE L11.jpg',
+    '/logos/SOE L12.jpg',
+    '/logos/SOE L13.jpg',
+    '/logos/SOE L14.jpg',
+    '/logos/SOE L15.jpg',
+
   ];
 
   useEffect(() => {
