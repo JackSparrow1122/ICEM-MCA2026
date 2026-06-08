@@ -58,14 +58,14 @@ const Tour = () => {
   return (
     <section className="relative px-4 md:px-8 lg:px-16 py-12 md:py-16 overflow-hidden bg-gradient-to-b from-white via-[#F1F5F9] to-[#F1F5F9]">
       {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#2563EB]/5 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#1F2937]/5 rounded-full blur-3xl -ml-48 -mb-48 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#259CA8]/5 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#135783]/5 rounded-full blur-3xl -ml-48 -mb-48 pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Heading Section */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
-            Where <span className="bg-gradient-to-r from-[#2563EB] to-[#1F2937] bg-clip-text text-transparent">Possibilities Are Infinite</span>
+            Where <span className="bg-gradient-to-r from-[#135783] to-[#259CA8] bg-clip-text text-transparent">Possibilities Are Infinite</span>
           </h1>
           <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-3xl mx-auto">
             From tech labs to wellness centers, we have it all
@@ -92,7 +92,7 @@ const Tour = () => {
 
               {/* Text Content at Bottom */}
               <div className="absolute inset-0 flex flex-col justify-end p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold text-white mb-1 group-hover:text-[#F59E0B] transition-colors duration-300">
+                <h3 className="text-lg md:text-xl font-bold text-white mb-1 group-hover:text-[#259CA8] transition-colors duration-300">
                   {facility.title}
                 </h3>
                 <p className="text-xs md:text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -122,7 +122,7 @@ const Tour = () => {
 
               {/* Text Content at Bottom */}
               <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-5">
-                <h3 className="text-base md:text-lg font-bold text-white mb-1 group-hover:text-[#F59E0B] transition-colors duration-300">
+                <h3 className="text-base md:text-lg font-bold text-white mb-1 group-hover:text-[#259CA8] transition-colors duration-300">
                   {facility.title}
                 </h3>
                 <p className="text-xs text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
