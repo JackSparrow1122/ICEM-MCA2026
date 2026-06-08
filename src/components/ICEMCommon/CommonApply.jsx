@@ -37,12 +37,12 @@ const AdmissionProcess = () => {
           {steps.map((text, index) => (
             <div
               key={index}
-              className="relative p-6 shadow-xl rounded-lg bg-[#2690A080] backdrop-blur-sm"
+              className="relative p-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl transition-all duration-300 hover:bg-white/15 hover:-translate-y-1 flex flex-col items-center text-center space-y-4"
             >
-              <div className="absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full bg-[#135783] text-white font-semibold shadow-md">
-                {index + 1}
+              <div className="w-12 h-12 flex items-center justify-center rounded-2xl bg-white text-[#135783] font-bold text-xl shadow-lg">
+                {String(index + 1).padStart(2, '0')}
               </div>
-              <p className="text-lg">{text}</p>
+              <p className="text-lg text-white font-medium leading-relaxed">{text}</p>
             </div>
           ))}
         </div>

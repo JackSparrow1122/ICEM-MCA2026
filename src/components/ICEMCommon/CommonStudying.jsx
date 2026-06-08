@@ -16,21 +16,25 @@ import MyImage from '../../assets/images/studying.avif';
 
 const InfoCard = React.memo(({ icon, text }) => (
   <div
-    className="bg-white p-4 shadow-lg shadow-[#259CA8]/30 flex items-start rounded-lg"
+    className="bg-[#fcfdfe] p-5 border border-gray-100 shadow-md shadow-[#259CA8]/5 flex items-start gap-4 rounded-2xl hover:shadow-lg hover:border-[#259CA8]/30 transition-all duration-300 hover:-translate-y-0.5 group"
     data-aos="zoom-in"
   >
-    <div className="flex items-center">
-      {icon}
-      <span className="text-sm md:text-base text-left">{text}</span>
+    <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-[#259CA8]/10 text-[#259CA8] transition-colors duration-300 group-hover:bg-[#259CA8] group-hover:text-white">
+      {React.cloneElement(icon, { className: "w-6 h-6 mr-0 text-current" })}
     </div>
+    <span className="text-sm sm:text-base text-left text-gray-700 font-medium leading-relaxed self-center">
+      {text}
+    </span>
   </div>
 ));
 
 const HighlightCard = React.memo(({ icon, title, description }) => (
-  <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center h-full border-1 hover:border-[#259CA8]">
-    {icon}
-    <h3 className="text-lg font-bold text-[#259CA8] mb-2">{title}</h3>
-    <p className="text-gray-700 text-base">{description}</p>
+  <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center h-full hover:border-[#259CA8]/30 group">
+    <div className="w-16 h-16 rounded-2xl bg-[#259CA8]/10 text-[#259CA8] flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-[#259CA8] group-hover:text-white group-hover:scale-105 shadow-md shadow-[#259CA8]/5">
+      {React.cloneElement(icon, { className: "w-8 h-8 mb-0 text-current" })}
+    </div>
+    <h3 className="text-xl font-bold text-[#135783] mb-3 transition-colors duration-300 group-hover:text-[#259CA8]">{title}</h3>
+    <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
   </div>
 ));
 

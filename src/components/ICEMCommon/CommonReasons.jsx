@@ -53,20 +53,19 @@ export default function WhyChooseICEM() {
       </div>
 
       {/* Features Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:gap-8 gap-4 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-6">
         {features.map(({ title, description, Icon }, index) => (
           <div
             key={index}
-            className="flex flex-col items-start text-left relative group"
+            className="flex flex-col items-start text-left p-6 bg-[#f7fcfe] border border-[#e1f1f5] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#259CA8]/5 hover:bg-white hover:border-[#259CA8]/30 group"
           >
-            <Icon className="text-[#259CA8] w-10 h-10 mb-3 transition-transform duration-300 group-hover:scale-110" />
-            <h3 className="font-semibold text-lg text-[#135783] mb-2">{title}</h3>
-            <p className="text-sm text-gray-600">{description}</p>
-
-            {/* Vertical Dotted Line (Desktop Only) */}
-            {index < features.length - 1 && (
-              <div className="hidden lg:block absolute top-0 right-[-20px] h-full border-r-2 border-dotted border-gray-300"></div>
-            )}
+            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#259CA8]/10 text-[#259CA8] mb-4 transition-all duration-300 group-hover:bg-[#259CA8] group-hover:text-white">
+              <Icon className="w-6 h-6" />
+            </div>
+            <h3 className="font-bold text-lg text-[#135783] mb-2 transition-colors duration-300 group-hover:text-[#259CA8]">
+              {title}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed">{description}</p>
           </div>
         ))}
       </div>

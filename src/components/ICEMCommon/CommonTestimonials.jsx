@@ -134,31 +134,41 @@ const MechJourny = () => {
       <Slider {...settings}>
         {successors.map((successor) => (
           <div key={successor.id} className="px-2">
-            <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center relative border border-[#259CA8] min-h-[320px]">
-              <div className="absolute top-4 left-4 p-2 bg-white">
+            <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-6 flex flex-col items-center relative border border-gray-100 min-h-[360px] mt-6 mb-6 group hover:border-[#259CA8]/30">
+              {/* Quote icon overlay */}
+              <div className="absolute right-6 top-4 text-7xl font-serif text-gray-100 select-none group-hover:text-[#259CA8]/10 transition-colors duration-300">
+                ”
+              </div>
+
+              {/* Company Logo */}
+              <div className="absolute top-6 left-6 w-14 h-14 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center p-1.5 transition-transform duration-300 group-hover:scale-105">
                 <img
                   src={successor.companyLogo}
                   alt={`${successor.name} Company Logo`}
-                  className="w-16 h-16 object-contain"
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
 
-              <div className="flex justify-center items-center mt-6 mb-4">
+              {/* Profile Photo */}
+              <div className="flex justify-center items-center mt-12 mb-4 relative">
+                <div className="absolute -inset-1 bg-[#259CA8]/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <img
                   src={successor.image}
                   alt={successor.name}
-                  className="w-20 h-20 object-cover rounded-full shadow-lg"
+                  className="w-24 h-24 object-cover rounded-full shadow-md border-4 border-white relative z-10"
                 />
               </div>
 
-              <div className="text-center font-bold mb-2">
-                <h3 className="text-lg">{successor.name}</h3>
-                <p className="text-xs text-gray-600">{successor.degree}</p>
-                <p className="text-xs text-gray-600">{successor.location}</p>
+              {/* Name & Details */}
+              <div className="text-center mb-3">
+                <h3 className="text-lg font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#259CA8]">{successor.name}</h3>
+                <p className="text-xs font-semibold text-[#135783]">{successor.degree}</p>
+                <p className="text-[10px] text-gray-400 font-medium tracking-wider uppercase mt-0.5">{successor.location}</p>
               </div>
 
-              <div className="text-center text-xs text-gray-600">
-                {successor.details}
+              {/* Quote Content */}
+              <div className="text-center text-sm text-gray-600 leading-relaxed italic px-2">
+                "{successor.details}"
               </div>
             </div>
           </div>

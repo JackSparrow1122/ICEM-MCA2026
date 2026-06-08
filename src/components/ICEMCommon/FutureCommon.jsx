@@ -1,33 +1,8 @@
-import React, { useRef, useState, useEffect, useCallback } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 const LifeAtICEM = () => {
-  const leftRef = useRef(null);
   const videoRef = useRef(null);
-  const [videoHeight, setVideoHeight] = useState(0);
   const [loadVideo, setLoadVideo] = useState(false);
-
-  // Resize logic (unchanged)
-  const handleResize = useCallback(() => {
-    if (leftRef.current) {
-      setVideoHeight(leftRef.current.offsetHeight);
-    }
-  }, []);
-
-  useEffect(() => {
-    handleResize();
-    const debouncedResize = debounce(handleResize, 200);
-    window.addEventListener("resize", debouncedResize);
-    return () => window.removeEventListener("resize", debouncedResize);
-  }, [handleResize]);
-
-  // Debounce helper
-  const debounce = (func, wait) => {
-    let timeout;
-    return function (...args) {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => func.apply(this, args), wait);
-    };
-  };
 
   // 🔍 Lazy-load video when in viewport
   useEffect(() => {
@@ -49,14 +24,14 @@ const LifeAtICEM = () => {
   }, []);
 
   return (
-    <div className="w-full bg-[#FCFAEE] px-4 md:px-16 py-6">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
+    <div className="w-full bg-[#fbfbfa] px-4 md:px-16 py-12 border-t border-b border-gray-100">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         {/* Left: Text */}
-        <div ref={leftRef} className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-3xl md:text-4xl lg:text-4xl text-[#222] font-bold pb-4">
-            Be Future-Ready with <span className="text-[#166188]">ICEM!</span>
+        <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-gray-900 font-bold leading-tight">
+            Be Future-Ready with <span className="text-[#259CA8]">ICEM!</span>
           </h1>
-          <p className="text-base md:text-xl text-[#333]">
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed">
             Join the community of aspiring engineers at ICEM and turn your passion into a profession! Whether you dream of coding the next-gen apps, building AI solutions, designing advanced mechanical structures, or diving deep into telecommunications, ICEM provides the perfect launchpad for success.
           </p>
         </div>
@@ -64,8 +39,7 @@ const LifeAtICEM = () => {
         {/* Right: Lazy iframe */}
         <div
           ref={videoRef}
-          className="w-full lg:w-1/2 overflow-hidden shadow-lg"
-          style={{ height: videoHeight || "auto" }}
+          className="w-full lg:w-1/2 aspect-video rounded-3xl overflow-hidden shadow-2xl border border-gray-200/50 bg-gray-50 transition-all duration-300 hover:shadow-[#259CA8]/15"
         >
           {loadVideo && (
             <iframe
@@ -73,7 +47,7 @@ const LifeAtICEM = () => {
               title="Life At ICEM"
               allowFullScreen
               loading="lazy"
-              className="w-full h-full"
+              className="w-full h-full border-0"
             />
           )}
         </div>

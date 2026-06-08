@@ -46,15 +46,20 @@ export default function CompPointers() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           
           {/* Grid of icons */}
-          <div className="grid grid-cols-2 gap-8 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
             {data.map((item, index) => (
-              <div key={index} className="flex items-center space-x-6 md:space-x-4">
-                <div className="w-8 md:w-12 h-8 md:h-12 mb-2 md:mb-0">
-                  {item.icon}
+              <div
+                key={index}
+                className="flex items-center space-x-4 p-5 bg-white border border-gray-100/80 rounded-2xl shadow-sm hover:shadow-md hover:border-[#259CA8]/30 transition-all duration-300 group"
+              >
+                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-[#259CA8]/10 text-[#259CA8] transition-colors duration-300 group-hover:bg-[#259CA8] group-hover:text-white">
+                  {React.cloneElement(item.icon, { className: "w-6 h-6 text-current" })}
                 </div>
                 <div>
-                  <div className="text-lg md:text-xl font-bold text-gray-800">{item.value}</div>
-                  <div className="text-sm text-gray-600 font-medium">
+                  <div className="text-base font-bold text-gray-800 tracking-tight transition-colors duration-300 group-hover:text-[#259CA8]">
+                    {item.value}
+                  </div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mt-0.5">
                     {item.description}
                   </div>
                 </div>

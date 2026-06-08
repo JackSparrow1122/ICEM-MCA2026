@@ -60,26 +60,34 @@ const CompOffringICEM = () => {
         Engineering Specializations Offered at ICEM
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto px-2">
         {specializations.map((item, index) => (
           <div
             key={index}
-            className="shadow-xl rounded-lg overflow-hidden border border-gray-200"
+            className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full"
             data-aos="fade-up"
           >
-            <div className="h-40 flex items-center justify-center relative">
+            <div className="h-44 flex items-center justify-center relative overflow-hidden">
               <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
                 style={{ backgroundImage: `url(${item.image})` }}
               ></div>
-              <div className={`absolute inset-0 ${item.bg} opacity-60`} />
-              <div className="relative z-10">{item.icon}</div>
+              <div className={`absolute inset-0 ${item.bg} opacity-75 mix-blend-multiply`} />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="relative z-10 p-2 bg-white/15 backdrop-blur-md rounded-2xl border border-white/20 transition-all duration-300 group-hover:scale-110 group-hover:bg-white/25">
+                {item.icon}
+              </div>
             </div>
-            <div className="bg-white p-4 text-start">
-              <h3 className="text-lg md:text-lg font-bold text-[#135783] mb-2">
-                {item.title}
-              </h3>
-              <p className="text-sm md:text-sm text-gray-600">{item.description}</p>
+            <div className="p-5 flex-grow flex flex-col justify-between text-start">
+              <div>
+                <h3 className="text-lg font-bold text-[#135783] mb-2 transition-colors duration-300 group-hover:text-[#259CA8]">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+              </div>
+              <div className="pt-4 text-xs font-semibold text-[#259CA8] flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Explore Program <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </div>
             </div>
           </div>
         ))}
