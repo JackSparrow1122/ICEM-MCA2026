@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import backgroundImage from "../../assets/images/bg.png";
+import backgroundImage from "../../assets/images/bg.avif";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 function MechHero() {

@@ -4,21 +4,21 @@ const CompRecruiter = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const logos = [
-    '/logos/SOE L1.jpg',
-    '/logos/SOE L2.jpg',
-    '/logos/SOE L3.jpg',
-    '/logos/SOE L4.jpg',
-    '/logos/SOE L5.jpg',
-    '/logos/SOE L6.jpg',
-    '/logos/SOE L7.jpg',
-    '/logos/SOE L8.jpg',
-    '/logos/SOE L9.jpg',
-    '/logos/SOE L10.jpg',
-    '/logos/SOE L11.jpg',
-    '/logos/SOE L12.jpg',
-    '/logos/SOE L13.jpg',
-    '/logos/SOE L14.jpg',
-    '/logos/SOE L15.jpg',
+    '/logos/SOE L1.avif',
+    '/logos/SOE L2.avif',
+    '/logos/SOE L3.avif',
+    '/logos/SOE L4.avif',
+    '/logos/SOE L5.avif',
+    '/logos/SOE L6.avif',
+    '/logos/SOE L7.avif',
+    '/logos/SOE L8.avif',
+    '/logos/SOE L9.avif',
+    '/logos/SOE L10.avif',
+    '/logos/SOE L11.avif',
+    '/logos/SOE L12.avif',
+    '/logos/SOE L13.avif',
+    '/logos/SOE L14.avif',
+    '/logos/SOE L15.avif',
   ];
 
   useEffect(() => {
@@ -47,6 +47,7 @@ const CompRecruiter = () => {
                 alt={`Recruiter Logo ${directionLabel} ${index + 1}`}
                 className="h-14 sm:h-16 max-w-[115px] object-contain transition-transform duration-300 hover:scale-105"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           ))}
@@ -58,6 +59,7 @@ const CompRecruiter = () => {
                 alt={`Recruiter Logo ${directionLabel} ${index + 1}`}
                 className="h-14 sm:h-16 max-w-[115px] object-contain transition-transform duration-300 hover:scale-105"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           ))}
@@ -87,11 +89,15 @@ const CompRecruiter = () => {
         .logo-slider {
           position: relative;
           padding: 0 20px;
+          touch-action: pan-y; /* Prevent touch horizontal drag from locking page vertical scroll */
         }
 
         .logo-slider-track {
           display: flex;
           width: fit-content;
+          will-change: transform; /* Force hardware GPU acceleration */
+          transform: translate3d(0, 0, 0); /* Force GPU compositing */
+          backface-visibility: hidden;
         }
 
         .logo-slider-track.animate-left {
