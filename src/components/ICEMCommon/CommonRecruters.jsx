@@ -34,13 +34,11 @@ const CompRecruiter = () => {
   }, []);
 
   const renderSliderRow = (rowLogos, animationClass, directionLabel) => {
-    // Repeat logos 3 times to ensure the row length exceeds screen width on all resolutions
-    const repeated = [...rowLogos, ...rowLogos, ...rowLogos];
     return (
       <div className="logo-slider relative overflow-hidden w-full py-1">
         <div className={`logo-slider-track flex ${isVisible ? animationClass : ''}`}>
-          {/* First set */}
-          {repeated.map((logo, index) => (
+          {/* First set (All unique logos in this row) */}
+          {rowLogos.map((logo, index) => (
             <div key={`${directionLabel}-first-${index}`} className="logo-slide flex-none mx-3 sm:mx-4 md:mx-5">
               <img
                 src={logo}
@@ -51,8 +49,8 @@ const CompRecruiter = () => {
               />
             </div>
           ))}
-          {/* Duplicate set for seamless loop */}
-          {repeated.map((logo, index) => (
+          {/* Duplicate set for seamless loop (placed after the first set) */}
+          {rowLogos.map((logo, index) => (
             <div key={`${directionLabel}-second-${index}`} className="logo-slide flex-none mx-3 sm:mx-4 md:mx-5">
               <img
                 src={logo}
@@ -71,6 +69,11 @@ const CompRecruiter = () => {
     );
   };
 
+  // Construct three shifted arrays of all 15 unique logos to ensure visual diversity and zero duplication per row
+  const row1Logos = [...logos];
+  const row2Logos = [...logos.slice(10), ...logos.slice(0, 10)];
+  const row3Logos = [...logos.slice(5), ...logos.slice(0, 5)];
+
   return (
     <div className="logo-slider-section py-8 roboto-regular bg-white">
       <div className="text-center mb-8">
@@ -80,9 +83,9 @@ const CompRecruiter = () => {
       </div>
 
       <div className="flex flex-col gap-4 w-full">
-        {renderSliderRow(logos.slice(0, 5), 'animate-left', 'row1')}
-        {renderSliderRow(logos.slice(5, 10), 'animate-right', 'row2')}
-        {renderSliderRow(logos.slice(10, 15), 'animate-left-fast', 'row3')}
+        {renderSliderRow(row1Logos, 'animate-left', 'row1')}
+        {renderSliderRow(row2Logos, 'animate-right', 'row2')}
+        {renderSliderRow(row3Logos, 'animate-left-fast', 'row3')}
       </div>
 
       <style>{`
