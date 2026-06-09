@@ -2,7 +2,7 @@ import React from 'react';
 import placementImage from '../../assets/images/topplace.avif';
 import placementImageMobile from '../../assets/images/homemobile.avif';
 
-function IntegratedBbaMbaPlacement() {
+function CommonPlacement() {
   return (
     <div className="w-full flex flex-col items-center">
       {/* Desktop Placement Image */}
@@ -28,4 +28,4 @@ function IntegratedBbaMbaPlacement() {
   );
 }
 
-export default IntegratedBbaMbaPlacement;
+export default CommonPlacement;

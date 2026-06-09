@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 
 import vandar from '../../assets/images/MECH-images/abc.avif';
 import micro from '../../assets/images/MECH-images/Microsoft.avif';
-import ias from '../../assets/images/MECH-images/ias.avif';
 import tesla from '../../assets/images/MECH-images/tesla.avif';
 import army from '../../assets/images/MECH-images/army.avif';
 import abn from '../../assets/images/MECH-images/abn.avif';
@@ -12,7 +11,6 @@ import hansala from '../../assets/images/Hansala.avif';
 import arpita from '../../assets/images/Arpita.avif';
 import nikhil from '../../assets/images/Nikhil.avif';
 import ankur from '../../assets/images/Ankur.avif';
-import nilesh from '../../assets/images/Nileshkumar.avif';
 import apurv from '../../assets/images/Apoorva.avif';
 
 import "slick-carousel/slick/slick.css";
@@ -71,19 +69,7 @@ const successors = [
     degree: '(Mechanical Engineering)',
     companyLogo: army,
   },
-  {
-    id: 5,
-    name: 'Nileshkumar Kshirsagar',
-    image: nilesh,
-    details: (
-      <>
-        An alumnus of Indira who graduated in 2011, has displayed exceptional achievements and is currently serving as an <strong>IAS officer</strong> in the Chhattisgarh Cadre. (MBA)
-      </>
-    ),
-    location: 'Chhattisgarh, India',
-    degree: '(MBA)',
-    companyLogo: ias,
-  },
+
   {
     id: 6,
     name: 'Apoorva Kakkar',
