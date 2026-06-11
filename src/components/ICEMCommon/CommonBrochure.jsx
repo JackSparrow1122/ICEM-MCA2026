@@ -1,12 +1,9 @@
 import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import brochurePdf from '../../assets/ICEMAdmissionBrochure2025.pdf';
 
 const CompBrochure = () => {
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <div
       className="flex justify-between items-center bg-contain bg-center text-white shadow-lg py-2  px-4 md:px-8 lg:px-16 poppins-regular"
@@ -20,7 +17,8 @@ const CompBrochure = () => {
         </div>
 
         <a
-          onClick={handleScrollToTop}
+          href={brochurePdf}
+          download="ICEM_Admission_Brochure_2025.pdf"
           className="bg-[#0793b3] border-2 border-white text-white px-6 py-3 rounded-3xl hover:bg-[#259CA8] transition duration-300 flex items-center space-x-2 cursor-pointer"
         >
           <FontAwesomeIcon icon={faDownload} />
@@ -32,3 +30,4 @@ const CompBrochure = () => {
 };
 
 export default memo(CompBrochure);
+
