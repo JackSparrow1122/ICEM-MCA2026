@@ -59,7 +59,7 @@ export default function WhyChooseICEM() {
       {/* Heading Section */}
       <div className="text-center mb-12 px-4">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          Why <span className="text-[#F37121]">MBA</span> at <span className="text-[#003c84]">ICEM</span>?
+          Why <span className="text-[#E06217]">MBA</span> at <span className="text-[#E06217]">ICEM</span>?
         </h2>
         <p className="max-w-4xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed font-medium">
           Indira College of Engineering & Management (ICEM) stands among the best MBA colleges in India, offering an AICTE-approved, SPPU-affiliated Master of Business Administration programme designed for the modern business landscape. World-class faculty, an industry-aligned curriculum, and a strong placement record empower students to become innovators, problem solvers, and future business leaders.

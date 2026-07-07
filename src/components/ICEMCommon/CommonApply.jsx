@@ -32,19 +32,19 @@ const AdmissionProcess = () => {
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* Left Column: Heading & Info */}
           <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#F37121] bg-[#F37121]/10 px-3 py-1.5 rounded-full">
               <span className="w-1.5 h-1.5 rounded-full bg-[#F37121]"></span>
               Admissions 2026
             </div>
-            
+
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
               Admission Process: <br />
-              <span className="text-[#003c84]">How to Apply?</span>
+              <span className="text-[#E06217]">How to Apply?</span>
             </h2>
-            
+
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               Getting into ICEM is a simple, structured process. Follow these three steps to secure your enrollment in our premier MBA programme.
             </p>
@@ -62,13 +62,12 @@ const AdmissionProcess = () => {
 
           {/* Right Column: Timeline Cards */}
           <div className="lg:col-span-7 relative pl-6 md:pl-10">
-            {/* Vertical timeline line */}
-            <div className="absolute left-[29px] md:left-[41px] top-6 bottom-6 w-[2px] bg-gradient-to-b from-[#F37121] via-[#F37121]/40 to-transparent"></div>
+            <div className="absolute left-[40px] md:left-[60px] top-6 bottom-6 w-[2px] bg-gradient-to-b from-[#F37121] via-[#F37121]/40 to-transparent -translate-x-1/2"></div>
 
             <div className="space-y-8">
               {steps.map((step, index) => (
                 <div key={index} className="relative flex gap-6 md:gap-8 items-start group">
-                  
+
                   {/* Timeline Badge */}
                   <div className="relative z-10 flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white border-2 border-[#F37121] flex items-center justify-center font-bold text-sm md:text-base text-[#F37121] group-hover:bg-[#F37121] group-hover:text-white transition-all duration-300 shadow-md">
                     {index + 1}

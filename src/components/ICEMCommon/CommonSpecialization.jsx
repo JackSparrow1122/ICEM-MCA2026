@@ -165,7 +165,7 @@ const CommonSpecialization = () => {
           {/* Right Content Pane */}
           <div key={activeTab} className="lg:col-span-8 space-y-6 min-h-[450px]">
             {/* Specialization Title */}
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#003c84] tracking-tight">
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#E06217] tracking-tight">
               {activeSpec.title}
             </h3>
 
@@ -186,7 +186,7 @@ const CommonSpecialization = () => {
 
             {/* Programme Structure */}
             <div>
-              <h4 className="text-base font-bold text-[#003c84] mb-3 tracking-wide">
+              <h4 className="text-base font-bold text-[#E06217] mb-3 tracking-wide">
                 Programme Structure
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2.5">
@@ -203,7 +203,7 @@ const CommonSpecialization = () => {
 
             {/* Recruiters for Specialization */}
             <div>
-              <h4 className="text-base font-bold text-[#003c84] mb-4 tracking-wide">
+              <h4 className="text-base font-bold text-[#E06217] mb-4 tracking-wide">
                 Recruiters for {activeSpec.title}
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

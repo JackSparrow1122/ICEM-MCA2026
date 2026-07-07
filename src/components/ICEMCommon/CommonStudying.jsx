@@ -88,12 +88,12 @@ function MBAStudying() {
         <div className="w-full space-y-4" data-aos="fade-up">
           {/* MBA Excellence Badge */}
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#F37121]">
-            <span className="w-8 h-0.5 bg-[#F37121]"></span>
+            <span className="w-8 h-0.5 bg-[#DF6118]"></span>
             Why MBA at ICEM?
           </div>
 
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Why <span className="text-[#003c84]">MBA</span> at <span className="text-[#F37121]">ICEM</span>?
+            Why <span className="text-[#DF6118]">MBA</span> at <span className="text-[#F37121]">ICEM</span>?
           </h2>
 
           <p className="text-sm md:text-base text-gray-600 leading-relaxed max-w-5xl">
