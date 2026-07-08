@@ -18,7 +18,7 @@ const SocialIcon = ({ href, children, label }) => (
     target="_blank"
     rel="noopener noreferrer"
     aria-label={label}
-    className="p-3 rounded-full bg-gray-100 hover:bg-[#F37121] text-gray-600 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1"
+    className="p-3 rounded-full bg-gray-100 hover:bg-[#003c84] text-gray-600 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1"
   >
     {children}
   </a>
@@ -31,7 +31,7 @@ const Footer = () => {
 
 
       {/* Bottom */}
-      <div className="bg-[#F37121] text-white text-center text-xs sm:text-sm py-4 px-4">
+      <div className="bg-[#003c84] text-white text-center text-xs sm:text-sm py-4 px-4">
         <p>
           © {new Date().getFullYear()} Indira College of Engineering and Management — All Rights Reserved.
         </p>

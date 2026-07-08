@@ -4,77 +4,77 @@ import "aos/dist/aos.css";
 
 const specializationsData = [
   {
-    id: "marketing",
-    title: "Marketing Management",
-    displayName: "MBA in Marketing Management",
+    id: "software",
+    title: "Software Engineering",
+    displayName: "Software Engineering & Development",
     duration: "2 Years",
     fees: "₹1,50,000/year",
     description:
-      "This specialization delves into consumer behaviour, digital marketing strategies, brand management, and integrated marketing communications. It equips students with the skills to analyse markets, build powerful brands, and design data-driven campaigns that deliver measurable business results.",
-    ctaText: "Apply Now for Marketing Management",
+      "This core track focuses on advanced software design principles, object-oriented methodologies, algorithms, and system software, preparing students to architect high-performance, secure software applications.",
+    ctaText: "Apply Now for MCA (Software Engineering)",
     structure: [
-      "Marketing Management & Consumer Behaviour",
-      "Digital Marketing & Social Media Strategy",
-      "Brand Management & Integrated Marketing Communications",
-      "Sales & Distribution Management",
-      "Strategic Marketing & Marketing Analytics",
+      "Object-Oriented Analysis & Design",
+      "Data Structures & Algorithm Design",
+      "Software Testing & Quality Assurance",
+      "Advanced Java & Python Development",
+      "System Software & Operating Systems",
     ],
   },
   {
-    id: "finance",
-    title: "Financial Management",
-    displayName: "MBA in Financial Management",
+    id: "cloud",
+    title: "Cloud Computing",
+    displayName: "Cloud Computing & DevOps",
     duration: "2 Years",
     fees: "₹1,50,000/year",
     description:
-      "This specialization provides an in-depth understanding of corporate finance, investment analysis, financial markets, and risk management. It prepares students to make strategic financial decisions and navigate the global financial ecosystem with confidence.",
-    ctaText: "Apply Now for Financial Management",
+      "Focus on cloud infrastructure, virtualization, containerization, and modern deployment strategies. Learn to implement scalable cloud solutions and streamline continuous integration & delivery.",
+    ctaText: "Apply Now for MCA (Cloud Computing & DevOps)",
     structure: [
-      "Corporate Finance & Financial Statement Analysis",
-      "Investment Analysis & Portfolio Management",
-      "Financial Markets & Institutions",
-      "International Finance & Risk Management",
-      "Mergers, Acquisitions & Corporate Valuation",
+      "Cloud Architecture & Services (AWS/Azure)",
+      "DevOps Practices & CI/CD Pipelines",
+      "Virtualization & Containerization (Docker/Kubernetes)",
+      "Linux Administration & Scripting",
+      "Infrastructure as Code & Automation Tools",
     ],
   },
   {
-    id: "hr",
-    title: "Human Resources Management",
-    displayName: "MBA in Human Resources Management",
+    id: "web",
+    title: "Web & Mobile Tech",
+    displayName: "Web & Mobile Application Technologies",
     duration: "2 Years",
     fees: "₹1,50,000/year",
     description:
-      "This specialization focuses on strategic HR, talent acquisition, organizational behaviour, performance management, and employee development, preparing graduates to step confidently into future HR leadership roles.",
-    ctaText: "Apply Now for Human Resources Management",
+      "Equips students with cutting-edge full-stack web and cross-platform mobile application development skills using frameworks like React, Node.js, and native/hybrid mobile platforms.",
+    ctaText: "Apply Now for MCA (Web & Mobile Technologies)",
     structure: [
-      "Talent Management & Acquisition",
-      "Organizational Behaviour & Development",
-      "Performance Management Systems & Compensation",
-      "Employment Laws & Labor Relations",
-      "HR Analytics & Strategic HRM",
+      "Full-Stack Web Development (MERN)",
+      "Mobile Application Design & Android/iOS Dev",
+      "UI/UX Design Principles & Prototyping",
+      "Web Services & API Development",
+      "E-commerce Technologies & Security",
     ],
   },
   {
-    id: "operations",
-    title: "Operations & Supply Chain",
-    displayName: "MBA in Operations & Supply Chain Management",
+    id: "data",
+    title: "Data Science",
+    displayName: "Data Science & Big Data Analytics",
     duration: "2 Years",
     fees: "₹1,50,000/year",
     description:
-      "This specialization covers supply chain dynamics, logistics, operations management, and project planning, preparing students to manage large-scale systems with efficiency and precision.",
-    ctaText: "Apply Now for Operations & Supply Chain Management",
+      "Learn database management, big data storage architectures, machine learning models, and data analytics tools to process large-scale datasets and extract actionable business intelligence.",
+    ctaText: "Apply Now for MCA (Data Science & Analytics)",
     structure: [
-      "Operations Strategy & Supply Chain Management",
-      "Logistics & Transportation Management",
-      "Project Management & Quality Control",
-      "Procurement & Sourcing Strategies",
-      "Analytics for Operations & Decision Modelling",
+      "Database Management Systems & SQL/NoSQL",
+      "Data Warehousing & Big Data Architectures",
+      "Statistical Methods & R/Python Programming",
+      "Machine Learning & Artificial Intelligence",
+      "Data Visualization & Business Analytics",
     ],
   },
 ];
 
 const CommonSpecialization = () => {
-  const [activeTab, setActiveTab] = useState("marketing");
+  const [activeTab, setActiveTab] = useState("software");
 
   useEffect(() => {
     AOS.init({ duration: 600, once: true });
@@ -86,19 +86,19 @@ const CommonSpecialization = () => {
     let folder = "";
     let count = 0;
     switch (specId) {
-      case "marketing":
+      case "software":
         folder = "BBA – Marketing";
         count = 12;
         break;
-      case "finance":
+      case "cloud":
         folder = "BBA – Finance";
         count = 10;
         break;
-      case "hr":
+      case "data":
         folder = "BBA HR";
         count = 10;
         break;
-      case "operations":
+      case "web":
         folder = "BBA Logistics & Supply Chain Management";
         count = 10;
         break;
@@ -125,7 +125,7 @@ const CommonSpecialization = () => {
       `}</style>
 
       {/* Decorative Blur Orbs */}
-      <div className="absolute top-1/4 left-0 w-80 h-80 bg-[#F37121]/5 rounded-full blur-3xl -translate-x-1/2 pointer-events-none"></div>
+      <div className="absolute top-1/4 left-0 w-80 h-80 bg-[#003c84]/5 rounded-full blur-3xl -translate-x-1/2 pointer-events-none"></div>
       <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-[#003c84]/5 rounded-full blur-3xl translate-x-1/2 pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -133,10 +133,10 @@ const CommonSpecialization = () => {
         {/* Title Header */}
         <div className="mb-10 text-left" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-2">
-            Explore MBA Specializations
+            Explore MCA Specialization Tracks
           </h2>
           <p className="text-gray-500 text-sm md:text-base leading-relaxed">
-            Choose from the most comprehensive range of MBA courses available in Maharashtra.
+            Choose from the most comprehensive range of IT specialization tracks designed for modern developer roles.
           </p>
         </div>
 
@@ -152,8 +152,8 @@ const CommonSpecialization = () => {
                   key={spec.id}
                   onClick={() => setActiveTab(spec.id)}
                   className={`w-auto lg:w-full text-left py-2.5 px-5 lg:py-3.5 lg:px-6 rounded-full transition-all duration-300 font-bold text-sm lg:text-base ${isActive
-                    ? "bg-gradient-to-r from-[#F37121] to-[#D75A13] text-white shadow-md shadow-[#F37121]/15 scale-[1.02]"
-                    : "text-slate-500 hover:bg-gray-50 hover:text-[#F37121]"
+                    ? "bg-gradient-to-r from-[#278da4] to-[#003c84] text-white shadow-md shadow-[#003c84]/15 scale-[1.02]"
+                    : "text-slate-500 hover:bg-gray-50 hover:text-[#003c84]"
                     }`}
                 >
                   {spec.title}
@@ -165,8 +165,8 @@ const CommonSpecialization = () => {
           {/* Right Content Pane */}
           <div key={activeTab} className="lg:col-span-8 space-y-6 min-h-[450px]">
             {/* Specialization Title */}
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#E06217] tracking-tight">
-              {activeSpec.title}
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#278da4] tracking-tight">
+              {activeSpec.displayName}
             </h3>
 
             {/* Badges */}
@@ -186,24 +186,22 @@ const CommonSpecialization = () => {
 
             {/* Programme Structure */}
             <div>
-              <h4 className="text-base font-bold text-[#E06217] mb-3 tracking-wide">
+              <h4 className="text-base font-bold text-[#278da4] mb-3 tracking-wide">
                 Programme Structure
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2.5">
                 {activeSpec.structure.map((item, index) => (
                   <div key={index} className="flex items-start gap-2 text-gray-700 hover:text-gray-900 transition-colors">
-                    <span className="text-[#F37121] font-bold text-base leading-none select-none">✓</span>
+                    <span className="text-[#003c84] font-bold text-base leading-none select-none">✓</span>
                     <span className="text-sm font-semibold leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-
-
             {/* Recruiters for Specialization */}
             <div>
-              <h4 className="text-base font-bold text-[#E06217] mb-4 tracking-wide">
+              <h4 className="text-base font-bold text-[#278da4] mb-4 tracking-wide">
                 Recruiters for {activeSpec.title}
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -230,7 +228,7 @@ const CommonSpecialization = () => {
             <div className="pt-4">
               <button
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="w-full py-4 text-center text-white font-bold rounded-2xl bg-[#F37121] hover:bg-[#D75A13] active:scale-[0.99] transition-all duration-300 shadow-lg shadow-[#F37121]/20 text-base md:text-lg"
+                className="w-full py-4 text-center text-white font-bold rounded-2xl bg-[#003c84] hover:bg-[#278da4] active:scale-[0.99] transition-all duration-300 shadow-lg shadow-[#003c84]/20 text-base md:text-lg"
               >
                 {activeSpec.ctaText}
               </button>

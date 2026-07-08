@@ -29,17 +29,17 @@ const LifeAtICEM = () => {
         {/* Left: Text */}
         <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4">
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-gray-900 font-bold leading-tight">
-            Be Future-Ready with <span className="text-[#F37121]">ICEM!</span>
+            Be Future-Ready with <span className="text-[#003c84]">ICEM!</span>
           </h1>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-            Join the community of aspiring business leaders at ICEM and turn your passion into a profession! Whether you dream of managing marketing campaigns, analysis of financial structures, leading human resource teams, or designing efficient operations & supply chain management, ICEM provides the perfect launchpad for success.
+            Join the community of aspiring software professionals at ICEM and turn your passion into a profession! Whether you dream of building cutting-edge web applications, architecting robust databases, developing mobile apps, or mastering cloud systems, ICEM provides the perfect launchpad for success.
           </p>
         </div>
 
         {/* Right: Lazy iframe */}
         <div
           ref={videoRef}
-          className="w-full lg:w-1/2 aspect-video rounded-3xl overflow-hidden shadow-2xl border border-gray-200/50 bg-gray-50 transition-all duration-300 hover:shadow-[#F37121]/15"
+          className="w-full lg:w-1/2 aspect-video rounded-3xl overflow-hidden shadow-2xl border border-gray-200/50 bg-gray-50 transition-all duration-300 hover:shadow-[#003c84]/15"
         >
           {loadVideo && (
             <iframe

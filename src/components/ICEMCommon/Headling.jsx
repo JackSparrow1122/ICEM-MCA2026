@@ -4,7 +4,7 @@ const Headling = () => {
   const message = "Admissions Open for 2026 – Don’t wait, apply now and take your first step toward a brighter future!";
 
   return (
-    <div className="overflow-hidden w-full bg-gradient-to-r from-[#F37121] via-[#D75A13] to-[#F37121] py-2">
+    <div className="overflow-hidden w-full bg-gradient-to-r from-[#278da4] via-[#003c84] to-[#278da4] py-2">
       <div className="relative w-full">
         <div className="marquee-track text-white text-2xl font-semibold whitespace-nowrap">
           {Array(10).fill(`${message} | `).join('')}

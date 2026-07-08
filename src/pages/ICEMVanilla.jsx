@@ -31,8 +31,6 @@ const ICEMCommon = () => {
       <CommonHighlights />
       <CommonPossibilities />
       <CommonBrochure />
-
-      {/* <CommonInovation /> */}
       <CommonApply />
       <FutureWithIcem />
       <Headline />

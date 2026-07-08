@@ -101,7 +101,7 @@ function ThankYou() {
           <div className="py-2 px-4 bg-[#F7F3EF] rounded-2xl inline-block mb-8">
             <p className="text-sm text-gray-500 font-medium">
               Redirecting to home page in{" "}
-              <span className="text-[#F37121] font-bold text-base">{seconds}</span>{" "}
+              <span className="text-[#003c84] font-bold text-base">{seconds}</span>{" "}
               seconds...
             </p>
           </div>
@@ -110,13 +110,13 @@ function ThankYou() {
           <div className="space-y-3">
             <button
               onClick={() => window.history.back()}
-              className="w-full bg-[#F37121] hover:bg-[#D75A13] text-white py-3 px-6 rounded-xl font-bold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
+              className="w-full bg-[#003c84] hover:bg-[#278da4] text-white py-3 px-6 rounded-xl font-bold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
             >
               Go Back
             </button>
             <a
               href="/"
-              className="block w-full bg-[#FCFAEE] hover:bg-[#F7F3EF] text-[#F37121] border border-gray-200 py-3 px-6 rounded-xl font-bold transition-all duration-300 cursor-pointer"
+              className="block w-full bg-[#FCFAEE] hover:bg-[#F7F3EF] text-[#003c84] border border-gray-200 py-3 px-6 rounded-xl font-bold transition-all duration-300 cursor-pointer"
             >
               Return to Home
             </a>

@@ -10,9 +10,9 @@ const pageContent = {
 
   "/": {
 
-    headline: "Trusted by 350+ Top Recruiters Across India ",
+    headline: "Trusted by Leading IT Companies Across India",
 
-    body: "From global technology leaders to Fortune 500 giants, ICEM's placement network connects graduates with careers that matter. ",
+    body: "From global technology giants to leading IT consulting firms, ICEM's MCA placement network connects graduates with careers in software and enterprise technology.",
 
   },
 

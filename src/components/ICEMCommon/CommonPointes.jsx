@@ -4,35 +4,24 @@ import { FaClock, FaBriefcase, FaGraduationCap, FaClipboardList } from 'react-ic
 
 const data = [
   {
-    icon: <FaClock className="text-[#F37121] text-4xl" />, // Clock icon for Duration
+    icon: <FaClock className="text-[#003c84] text-4xl" />, // Clock icon for Duration
     value: "Course Duration",
-    description: "The MBA Programme spans 2 years across four semesters.",
+    description: "A comprehensive 2-year programme divided into four semesters, including a final semester industry project.",
   },
   {
-    icon: <FaBriefcase className="text-[#F37121] text-4xl" />, // Briefcase icon for Internship
-    value: "Internship",
-    description: "Structured internships with leading organizations across industries.",
+    icon: <FaBriefcase className="text-[#003c84] text-4xl" />, // Briefcase icon for Internship
+    value: "Internship Opportunity ",
+    description: "Students undertake a significant live project or internship with leading IT firms, gaining crucial industry experience. ",
   },
   {
-    icon: <FaGraduationCap className="text-[#F37121] text-4xl" />, // Graduation cap icon for Placements
-    value: "Placements",
-    description: "A strong placement record with top recruiters nationwide.",
+    icon: <FaGraduationCap className="text-[#003c84] text-4xl" />, // Graduation cap icon for Placements
+    value: "Campus Recruitment ",
+    description: " Excellent placement opportunities with top IT product companies, MNCs, and IT consulting firms seeking skilled software professionals. ",
   },
   {
-    icon: <FaClipboardList className="text-[#F37121] text-4xl" />, // Clipboard icon for Eligibility
+    icon: <FaClipboardList className="text-[#003c84] text-4xl" />, // Clipboard icon for Eligibility
     value: "Eligibility",
-    description: (
-      <span>
-        Click{" "}
-        <a
-          href="#faq"
-          className="text-[#F37121] hover:underline font-bold transition-all"
-        >
-          here
-        </a>{" "}
-        to see eligibility.
-      </span>
-    ),
+    description: "Graduation in any discipline with a minimum of 50%, Mathematics at 10+2 or graduation level, and a valid MAH-MCA-CET score. "
   },
 ];
 
@@ -45,13 +34,13 @@ export default function CompPointers() {
           {data.map((item, index) => (
             <div
               key={index}
-              className="flex items-start space-x-4 p-5 bg-white border border-gray-100/80 rounded-2xl shadow-sm hover:shadow-md hover:border-[#F37121]/30 transition-all duration-300 group"
+              className="flex items-start space-x-4 p-5 bg-white border border-gray-100/80 rounded-2xl shadow-sm hover:shadow-md hover:border-[#003c84]/30 transition-all duration-300 group"
             >
-              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-[#F37121]/10 text-[#F37121] transition-colors duration-300 group-hover:bg-[#F37121] group-hover:text-white mt-1">
+              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-[#003c84]/10 text-[#003c84] transition-colors duration-300 group-hover:bg-[#003c84] group-hover:text-white mt-1">
                 {React.cloneElement(item.icon, { className: "w-6 h-6 text-current" })}
               </div>
               <div className="min-w-0 flex-1">
-                <div className="text-base font-bold text-gray-800 tracking-tight transition-colors duration-300 group-hover:text-[#F37121]">
+                <div className="text-base font-bold text-gray-800 tracking-tight transition-colors duration-300 group-hover:text-[#003c84]">
                   {item.value}
                 </div>
                 <div className="text-sm text-gray-500 mt-0.5 font-medium leading-relaxed break-words">

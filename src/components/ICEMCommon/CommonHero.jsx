@@ -14,19 +14,19 @@ function MechHero() {
   const iframeSrc = useMemo(() => {
     if (typeof window !== "undefined") {
       const token = window.crypto?.randomUUID ? window.crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
-      
+
       // 1. Store in sessionStorage (for local fallback)
       window.sessionStorage.setItem("icem_npf_thank_you_token", token);
-      
+
       // 2. Store in cookie with wildcard subdomain so the main website (indiraicem.ac.in) can read it
       const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
       const cookieDomain = isLocal ? "" : "; domain=.indiraicem.ac.in";
       document.cookie = `icem_npf_thank_you_token=${token}; path=/${cookieDomain}; max-age=120; Secure; SameSite=Lax`;
-      
+
       // 3. Set redirect URL: main website in production, local origin for development
       const origin = isLocal ? window.location.origin : "https://indiraicem.ac.in";
       const redirectUrl = encodeURIComponent(`${origin}/thank-you?npf_token=${encodeURIComponent(token)}`);
-      
+
       return `https://widgets.nopaperforms.com/register?&r=${redirectUrl}&w=9fa0f32fe4f405fa68dc3df39ef6a11b`;
     }
     return "https://widgets.nopaperforms.com/register?&r=https://indiraicem.ac.in/thank-you/&w=9fa0f32fe4f405fa68dc3df39ef6a11b";
@@ -98,7 +98,7 @@ function MechHero() {
     >
       <style>{`
         ::selection {
-          background-color: #F37121;
+          background-color: #003c84;
           color: #fff8f0;
         }
         @keyframes blink {
@@ -117,8 +117,8 @@ function MechHero() {
         {/* Left Text */}
         <div className="w-full lg:w-7/12 text-center lg:text-left space-y-6">
           <p className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight">
-            Join One of India&apos;s Most Trusted   {" "}
-            <span className="text-[#F37121]">MBA</span> Programme
+            India’s Top AICTE-Approved   {" "}
+            <span className="text-[#003c84]">MCA</span> Programme for Future Technologists
           </p>
 
 
@@ -126,8 +126,8 @@ function MechHero() {
           <div className="space-y-4">
             <p className="text-lg md:text-xl text-gray-200">
               2 Decades of Excellence | 100% Placement Assistance | SPPU Affiliated            </p>
-            <div className="inline-block px-4 py-2 bg-[#F37121]/20 border border-[#F37121]/30 rounded-full">
-              <span className="text-[#F37121] font-bold text-sm sm:text-base tracking-wide">
+            <div className="inline-block px-4 py-2 bg-[#003c84]/20 border border-[#003c84]/30 rounded-full">
+              <span className="text-[#003c84] font-bold text-sm sm:text-base tracking-wide">
                 Admissions Open 2026              </span>
             </div>
           </div>
@@ -135,7 +135,7 @@ function MechHero() {
           {/* Apply Now Button */}
           <div className="mt-8 text-center lg:text-left hidden md:block">
             <button className="relative inline-flex items-center group text-lg font-semibold text-white">
-              <span className="relative z-10 flex items-center gap-2 px-8 py-3 bg-[#F37121] hover:bg-[#D75A13] rounded-full transition-all duration-300 ease-in-out shadow-lg hover:shadow-[#F37121]/35">
+              <span className="relative z-10 flex items-center gap-2 px-8 py-3 bg-[#003c84] hover:bg-[#278da4] rounded-full transition-all duration-300 ease-in-out shadow-lg hover:shadow-[#003c84]/35">
                 Apply Now
                 <FaLongArrowAltRight className="text-white text-xl transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
               </span>
@@ -148,7 +148,7 @@ function MechHero() {
           <div
             className="p-4 w-full max-w-md shadow-2xl rounded-2xl relative bg-white text-black min-h-[530px]"
           >
-            <h3 className="text-lg font-bold text-center mb-2 text-[#F37121]">
+            <h3 className="text-lg font-bold text-center mb-2 text-[#003c84]">
               Enquire Now
             </h3>
             {showSkeleton && (

@@ -18,7 +18,7 @@ function ApplyNowButton() {
       <a
         href="#apply"
         onClick={handleClick} // Call handleClick on click
-        className="bg-gradient-to-b from-[#F37121] to-[#D75A13] text-white py-1 px-6 shadow-lg transition duration-300 flex items-center justify-center transform -rotate-90 hover:underline hover:scale-110 cursor-pointer">
+        className="bg-gradient-to-b from-[#278da4] to-[#003c84] text-white py-1 px-6 shadow-lg transition duration-300 flex items-center justify-center transform -rotate-90 hover:underline hover:scale-110 cursor-pointer">
          Apply Now
       </a>
     </div>

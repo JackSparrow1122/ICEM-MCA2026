@@ -132,15 +132,15 @@ const MechJourny = () => {
   return (
     <div className="w-full h-full bg-[#FCFAEE] shadow-lg py-8 overflow-hidden">
       <h3 className="text-center font-bold text-3xl md:text-4xl text-gray-900 mb-4">
-        Alumni <span className="text-[#F37121]">Journey</span>
+        Alumni <span className="text-[#003c84]">Journey</span>
       </h3>
 
       <Slider {...settings}>
         {successors.map((successor) => (
           <div key={successor.id} className="px-2">
-            <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-6 flex flex-col items-center relative border border-gray-100 min-h-[360px] mt-6 mb-6 group hover:border-[#F37121]/30">
+            <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-6 flex flex-col items-center relative border border-gray-100 min-h-[360px] mt-6 mb-6 group hover:border-[#003c84]/30">
               {/* Quote icon overlay */}
-              <div className="absolute right-6 top-4 text-7xl font-serif text-gray-100 select-none group-hover:text-[#F37121]/10 transition-colors duration-300">
+              <div className="absolute right-6 top-4 text-7xl font-serif text-gray-100 select-none group-hover:text-[#003c84]/10 transition-colors duration-300">
                 ”
               </div>
 
@@ -156,7 +156,7 @@ const MechJourny = () => {
 
               {/* Profile Photo */}
               <div className="flex justify-center items-center mt-12 mb-4 relative">
-                <div className="absolute -inset-1 bg-[#F37121]/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -inset-1 bg-[#003c84]/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <img
                   src={successor.image}
                   alt={successor.name}
@@ -167,8 +167,8 @@ const MechJourny = () => {
 
               {/* Name & Details */}
               <div className="text-center mb-3">
-                <h3 className="text-lg font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#F37121]">{successor.name}</h3>
-                <p className="text-xs font-semibold text-[#F37121]">{successor.degree}</p>
+                <h3 className="text-lg font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#003c84]">{successor.name}</h3>
+                <p className="text-xs font-semibold text-[#003c84]">{successor.degree}</p>
                 <p className="text-[10px] text-gray-400 font-medium tracking-wider uppercase mt-0.5">{successor.location}</p>
               </div>
 

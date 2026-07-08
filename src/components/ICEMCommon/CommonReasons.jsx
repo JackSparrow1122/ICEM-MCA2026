@@ -59,10 +59,10 @@ export default function WhyChooseICEM() {
       {/* Heading Section */}
       <div className="text-center mb-12 px-4">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          Why <span className="text-[#E06217]">MBA</span> at <span className="text-[#E06217]">ICEM</span>?
+          Why <span className="text-[#278da4]">MCA</span> at <span className="text-[#278da4]">ICEM</span>?
         </h2>
         <p className="max-w-4xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed font-medium">
-          Indira College of Engineering & Management (ICEM) stands among the best MBA colleges in India, offering an AICTE-approved, SPPU-affiliated Master of Business Administration programme designed for the modern business landscape. World-class faculty, an industry-aligned curriculum, and a strong placement record empower students to become innovators, problem solvers, and future business leaders.
+          Indira College of Engineering & Management (ICEM) stands among the best MCA colleges in India, offering an AICTE-approved, SPPU-affiliated Master of Computer Applications programme designed for the modern technology landscape. World-class faculty, an industry-aligned curriculum, and a strong placement record empower students to become innovators, problem solvers, and future technology leaders.
         </p>
       </div>
 
@@ -71,12 +71,12 @@ export default function WhyChooseICEM() {
         {features.map(({ title, description, Icon }, index) => (
           <div
             key={index}
-            className="flex flex-col items-start text-left p-6 bg-[#FCFAEE] border border-[#e2e8f0] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#F37121]/5 hover:bg-white hover:border-[#F37121]/30 group"
+            className="flex flex-col items-start text-left p-6 bg-[#FCFAEE] border border-[#e2e8f0] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#003c84]/5 hover:bg-white hover:border-[#003c84]/30 group"
           >
-            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#F37121]/10 text-[#F37121] mb-4 transition-all duration-300 group-hover:bg-[#F37121] group-hover:text-white">
+            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#003c84]/10 text-[#003c84] mb-4 transition-all duration-300 group-hover:bg-[#003c84] group-hover:text-white">
               <Icon className="w-6 h-6" />
             </div>
-            <h3 className="font-bold text-lg text-gray-900 mb-2 transition-colors duration-300 group-hover:text-[#F37121] leading-snug">
+            <h3 className="font-bold text-lg text-gray-900 mb-2 transition-colors duration-300 group-hover:text-[#003c84] leading-snug">
               {title}
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed font-medium">{description}</p>
