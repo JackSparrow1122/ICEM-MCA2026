@@ -1,156 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+import { useEffect } from "react";
+import Navbar from "../components/home/Navbar";
+import Footer from "../components/home/Footer";
+import HeroSection from "../components/home/HeroSection";
+import AboutSection from "../components/home/AboutSection";
+import ProgramsSection from "../components/home/ProgramsSection";
+import PlacementSection from "../components/home/PlacementSection";
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16606532987"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', 'AW-16606532987');
-  </script>
+const logoSrc = "https://res.cloudinary.com/dcjmaapvi/image/upload/v1740489025/ga-hori_ylcnm3.png";
 
-  <!-- Character Encoding & Responsive Viewport -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+export default function HomePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  <!-- SEO -->
-  <title>ICEM Pune - MBA Admissions Open 2026 | Top MBA College in Pune, Maharashtra</title>
-  <meta name="description"
-    content="Official Admissions Open 2026-27 for MBA at Indira College of Engineering and Management (ICEM), Pune. Approved by AICTE, Affiliated to SPPU. Elite management education, high placements, top industry tie-ups." />
-  <meta name="keywords"
-    content="ICEM Pune MBA admissions 2026, best MBA college pune, top MBA colleges in maharashtra, MBA admission Pune, Indira College MBA, top private management college, cet cutoff, MBA marketing finance HR operations pune" />
-  <meta name="author" content="Indira College of Engineering and Management" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="googlebot" content="index, follow" />
-  <meta name="bingbot" content="index, follow" />
-  
-  <!-- Advanced SEO Metadata -->
-  <meta name="subject" content="MBA Admissions 2026 - Indira College of Engineering & Management, Pune" />
-  <meta name="abstract" content="Admissions open 2026 for MBA (Marketing, Finance, HR, Operations) at ICEM Pune." />
-  <meta name="topic" content="MBA Admissions Pune 2026" />
-  <meta name="summary" content="Apply for MBA programs at Indira College of Engineering & Management, Pune. Approved by AICTE, Affiliated to SPPU, Pune." />
-  <meta name="Classification" content="Educational - Management College" />
-  <meta name="category" content="Management Education Admission" />
-  <meta name="coverage" content="India, Global" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  
-  <!-- Geo Tags -->
-  <meta name="geo.region" content="IN-MH" />
-  <meta name="geo.placename" content="Pune" />
-  <meta name="geo.position" content="18.7061;73.6601" />
-  <meta name="ICBM" content="18.7061, 73.6601" />
-
-  <link rel="canonical" href="https://indiraicem.ac.in/programs/mba/" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/src/assets/images/icemtab.png" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet" />
-
-  <!-- CSS -->
-  <link href="/src/index.css" rel="stylesheet" />
-
-  <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:title" content="ICEM Pune MBA Admissions Open 2026" />
-  <meta property="og:description"
-    content="Enroll in ICEM Pune MBA - Autonomous program with top-tier placements, industry-aligned curriculum, and state-of-the-art facilities." />
- 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ICEM Admissions Open 2026 - Apply for MBA Program" />
-  <meta name="twitter:description"
-    content="Secure your future with ICEM Pune. Apply to the MBA program now." />
-
-  <!-- Structured Data (JSON-LD Schema) -->
-  <script type="application/ld+json">
-
-      {
-
-        "@context": "https://schema.org",
-
-        "@type": "CollegeOrUniversity",
-
-        "name": "Indira College of Engineering and Management",
-
-        "url": "https://indiraicem.ac.in/",
-
-        "logo": "https://indiraicem.ac.in/assets/images/ICEM-Logo.png",
-
-        "description": "Indira College of Engineering and Management (ICEM) offers undergraduate engineering programs in Pune, Maharashtra.",
-
-        "address": {
-
-          "@type": "PostalAddress",
-
-          "streetAddress": "Parandwadi, Tal. Maval",
-
-          "addressLocality": "Pune",
-
-          "addressRegion": "Maharashtra",
-
-          "postalCode": "410507",
-
-          "addressCountry": "India"
-
-        },
-
-        "sameAs": [
-
-          "https://www.facebook.com/icemofficial",
-
-          "https://www.instagram.com/icem_pune",
-
-          "https://www.linkedin.com/school/icem-pune"
-
-        ]
-
-      }
-</script>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PZNKKDM');</script>
-  <!-- End Google Tag Manager -->
-</head>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZNKKDM" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <!-- NPF Tracking Script -->
-  <script type="text/javascript">
-    var npf_d = 'https://ICEM.nopaperforms.com';
-    var npf_c = '4090';
-    var npf_m = '1';
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = "https://track.nopaperforms.com/js/track.js";
-    document.body.appendChild(s);
-  </script>
-
-  <!-- React Root -->
-  <div id="root"></div>
-
-  <!-- Main Script -->
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
-</html>
+  return (
+    <div className="min-h-screen w-full bg-white font-sans overflow-x-hidden">
+      <Navbar isVisible={true} isFullWidth={true} logoSrc={logoSrc} />
+      
+      <HeroSection />
+      <AboutSection />
+      <ProgramsSection />
+      <PlacementSection />
+      
+      <Footer />
+    </div>
+  );
+}
